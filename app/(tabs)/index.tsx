@@ -57,40 +57,22 @@ export default function Index() {
         {/* <Text className="text-white font-RobotaThin text-xl mb-2"  style={{fontFamily: 'RobotaThin'}}>Today’s Events:</Text> */}
         
         {todayEvents && todayEvents.length > 0 ? (
-          todayEvents.map((event, i) => (
-            <Carousel
-              loop={false}
-              width={280} // Account for padding
-              height={320}
-              data={todayEvents}
-              scrollAnimationDuration={1000}
-              onSnapToItem={(index: number) => console.log('Today event:', index)}
-              renderItem={renderEventItem}
-            />
+          todayEvents.map((event) => (
+            <EventCard event={event} key={event.id} />
           ))
         ) : (
           <Text className="text-gray-400">No events found for today.</Text>
         )}
 
-        {/* <Text className="text-white text-xl mt-6 mb-2">Upcoming Events:</Text>
+        <Text className="text-white text-xl mt-6 mb-2">Upcoming Events:</Text>
         {upcomingEvents && upcomingEvents.length > 0 ? (
           upcomingEvents.map((event, i) => (
-          //  <Carousel
-          //     loop={false}
-          //     width={280}
-          //     height={320}
-          //     data={upcomingEvents}
-          //     scrollAnimationDuration={1000}
-          //     autoPlay={true}
-          //     autoPlayInterval={5000}
-          //     onSnapToItem={(index: number) => console.log('Upcoming event:', index)}
-          //     renderItem={EventCard({ event, onPress: () => {} })}
-          //   />
+            <EventCard event={event} key={i} />
           )
           )
         ) : (
           <Text className="text-gray-400">No upcoming events.</Text>
-        )} */}
+        )}
       </ScrollView>
     </View>
   );
