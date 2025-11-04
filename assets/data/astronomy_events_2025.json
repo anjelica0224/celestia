@@ -14,6 +14,7 @@
       "constellation": "Bootes",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope required",
+      "keywords": "meteor shower",
       "raw_description": "The first meteor shower of the year — the mighty Quadrantids — is a marvelous sight to see. Under suitable conditions, this meteor stream can provide dozens of shooting stars per hour. This year, observing conditions are favorable as the peak occurs during the waxing crescent Moon. Start looking for the Quadrantid meteors after midnight. You can continue your meteor hunt until January 12, as the Quadrantids are known to produce bright fireballs even after the peak."
     },
     {
@@ -28,6 +29,7 @@
       "constellation": "Aquarius",
       "brightness": "Extremely bright (visible even in daylight)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On January 3, the 15%-illuminated Moon will be close to Venus (mag -4.5) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Aquarius."
     },
     {
@@ -42,6 +44,7 @@
       "constellation": "Aquarius",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "moon near saturn",
       "raw_description": "On January 4, the 25%-illuminated Moon will be close to Saturn (mag 1.1) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Aquarius. Also, a lunar occultation of Saturn will be visible over Europe, Africa, western Russia, and eastern Greenland."
     },
     {
@@ -56,6 +59,7 @@
       "constellation": "Pisces",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "conjunction",
       "raw_description": "On January 5, the 35%-illuminated Moon will be close to Neptune (mag 7.9) in the sky. Observe them through a pair of binoculars or via a telescope in the constellation Pisces. Also, a lunar occultation of Neptune will be observable from western Russia and eastern Svalbard."
     },
     {
@@ -70,6 +74,7 @@
       "constellation": "Aries",
       "brightness": "Faint (binoculars recommended)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "conjunction",
       "raw_description": "On January 9, the 80%-illuminated Moon will be close to Uranus (mag 5.7) in the sky. Observe them through a pair of binoculars or via a telescope in the constellation Aries."
     },
     {
@@ -84,6 +89,7 @@
       "constellation": "Taurus",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On January 10, the 82%-illuminated Moon will be close to the Pleiades star cluster (mag 1.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Taurus."
     },
     {
@@ -98,6 +104,7 @@
       "constellation": "",
       "brightness": "Extremely bright (visible even in daylight)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "Venus",
       "raw_description": "On January 10, Venus (mag -4.5) will appear at its farthest apparent distance east from the Sun: the celestial bodies will be separated by 47°12'. The event is called the greatest elongation. It’s the best time to observe Venus, so don’t miss the chance!"
     },
     {
@@ -112,6 +119,7 @@
       "constellation": "Gemini",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "full moon",
       "raw_description": "The Full Wolf Moon will occur on January 13 at 22:27 GMT. Our natural satellite will be in the constellation Gemini. Although the Full Moon technically lasts only a moment — when it is directly opposite the Sun relative to Earth — it appears fully illuminated a day before and after this time."
     },
     {
@@ -126,6 +134,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "Comet NEOWISE",
       "raw_description": "If we’re lucky, Comet C/2024 G3 might become visible to the naked eye, even in the daytime, by January 2025. However, it also might not survive perihelion and, even if it does, will be positioned quite close to the Sun in the sky. Read our article to learn more about this comet."
     },
     {
@@ -140,6 +149,7 @@
       "constellation": "Gemini",
       "brightness": "Bright (visible to naked eye)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On January 14, the 99%-illuminated Moon will be close to Mars (mag -1.4) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Gemini. Also, a lunar occultation of Mars will be observable from North and South America and Africa."
     },
     {
@@ -154,6 +164,7 @@
       "constellation": "Gemini",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "mars",
       "raw_description": "Mars will reach opposition on January 16, 2025, at 01:17 GMT. This is the best time to observe and photograph Mars, as it will be brighter than at any other time of the year and visible throughout the night. During the opposition, Mars will shine with a magnitude of -1.4 in the constellation Gemini. It will be easily visible to the naked eye. To explore the planet's surface, such as ice caps and brighter and darker areas, use a telescope of at least 50x magnification."
     },
     {
@@ -168,6 +179,7 @@
       "constellation": "Aquarius",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On January 18, Saturn (mag 1.1) will be close to Venus (mag -4.6) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Aquarius."
     },
     {
@@ -182,6 +194,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "Six planets — Mars, Jupiter, Uranus, Neptune, Venus, and Saturn — will align in the evening sky. Four of these planets (Mars, Jupiter, Venus, and Saturn) will be visible to the naked eye. You'll need a telescope or high-powered binoculars to see Neptune and Uranus."
     },
     {
@@ -196,6 +209,7 @@
       "constellation": "Virgo",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On January 21, the 55%-illuminated Moon will be close to Spica (mag 1.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Virgo."
     },
     {
@@ -210,6 +224,7 @@
       "constellation": "Scorpius",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On January 24, the 20%-illuminated Moon will be close to Antares (mag 1.1) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Scorpius."
     },
     {
@@ -224,6 +239,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "new moon",
       "raw_description": "The New Moon will occur on January 29 at 12:36 GMT. At this point, our natural satellite will stay between the Earth and the Sun, so its bright side will be facing away from the Earth. It’s the best time for stargazing because the Moon’s light won’t hinder the view."
     },
     {
@@ -238,6 +254,7 @@
       "constellation": "Pisces",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "conjunction",
       "raw_description": "On February 1, Neptune (mag 7.9) will be close to Venus (mag -4.6) in the sky. Observe Venus with the naked eye and use a pair of binoculars to see Neptune in the constellation Pisces."
     },
     {
@@ -252,6 +269,7 @@
       "constellation": "Aquarius",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On February 1, the 9%-illuminated Moon will be close to Saturn (mag 1.1) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Aquarius. Also, a lunar occultation of Saturn will be visible over western Russia."
     },
     {
@@ -266,6 +284,7 @@
       "constellation": "Pisces",
       "brightness": "Extremely bright (visible even in daylight)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On February 1, the 13%-illuminated Moon will be close to Venus (mag -4.7) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Pisces."
     },
     {
@@ -280,6 +299,7 @@
       "constellation": "Pisces",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "conjunction",
       "raw_description": "On February 1, the 13%-illuminated Moon will be close to Neptune (mag 7.8) in the sky. Observe them through a pair of binoculars or via a telescope in the constellation Pisces."
     },
     {
@@ -294,6 +314,7 @@
       "constellation": "Aries",
       "brightness": "Faint (binoculars recommended)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "conjunction",
       "raw_description": "On February 5, the 55%-illuminated Moon will be close to Uranus (mag 5.7) in the sky. Observe them through a pair of binoculars or via a telescope in the constellation Aries."
     },
     {
@@ -308,6 +329,7 @@
       "constellation": "Taurus",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On February 6, the 59%-illuminated Moon will be close to the Pleiades star cluster (mag 1.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Taurus."
     },
     {
@@ -322,6 +344,7 @@
       "constellation": "Gemini",
       "brightness": "Bright (visible to naked eye)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On February 9, the 92%-illuminated Moon will be close to Mars (mag -0.8) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Gemini. Also, a lunar occultation of Mars will be visible over Russia, China, eastern Canada, and Greenland."
     },
     {
@@ -336,6 +359,7 @@
       "constellation": "Leo",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "full moon",
       "raw_description": "The Full Snow Moon will occur on February 12 at 13:53 GMT. Our natural satellite will be in the constellation Leo. Although the Full Moon technically lasts only a moment — when it is directly opposite the Sun relative to Earth — it appears fully illuminated a day before and after this time."
     },
     {
@@ -350,6 +374,7 @@
       "constellation": "Virgo",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On February 17, the 79%-illuminated Moon will be close to Spica (mag 1.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Virgo."
     },
     {
@@ -364,6 +389,7 @@
       "constellation": "Aquarius",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On February 28, the 0.6%-illuminated Moon will be close to Saturn (mag 1.1) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Aquarius."
     },
     {
@@ -378,6 +404,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "new moon",
       "raw_description": "The New Moon will occur on February 28 at 00:45 GMT. At this point, our natural satellite will stay between the Earth and the Sun, so its bright side will be facing away from the Earth. It’s the best time for stargazing because the Moon’s light won’t hinder the view."
     },
     {
@@ -392,6 +419,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "Seven planets — Saturn, Mercury, Venus, Jupiter, Mars, Uranus, and Neptune — will align in the evening sky. Five of these planets (Saturn, Mercury, Venus, Jupiter, and Mars) will be visible to the naked eye. You'll need a telescope or high-powered binoculars to see Neptune and Uranus."
     },
     {
@@ -406,6 +434,7 @@
       "constellation": "Aries",
       "brightness": "Faint (binoculars recommended)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "conjunction",
       "raw_description": "On March 5, the 32%-illuminated Moon will be close to Uranus (mag 5.8) in the sky. Observe them through a pair of binoculars or a telescope in the constellation Aries."
     },
     {
@@ -420,6 +449,7 @@
       "constellation": "Taurus",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On March 5, the 42%-illuminated Moon will be close to the Pleiades star cluster (mag 1.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Taurus."
     },
     {
@@ -434,6 +464,7 @@
       "constellation": "",
       "brightness": "Bright (visible to naked eye)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "Mercury",
       "raw_description": "On March 8, Mercury (mag -0.2) will appear at its farthest apparent distance east from the Sun: the celestial bodies will be separated by 18°12'. The event is called the greatest elongation. It’s the best time to observe Mercury, so don’t miss the chance!"
     },
     {
@@ -448,6 +479,7 @@
       "constellation": "Gemini",
       "brightness": "Bright (visible to naked eye)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "Moon",
       "raw_description": "On March 9, the 74%-illuminated Moon will be close to Mars (mag -0.1) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Gemini."
     },
     {
@@ -462,6 +494,7 @@
       "constellation": "Virgo",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "full moon",
       "raw_description": "The Full Worm Moon will occur on March 14 at 06:55 GMT. Our natural satellite will be in the constellation Virgo. Although the Full Moon technically lasts only a moment — when it is directly opposite the Sun relative to Earth — it appears fully illuminated a day before and after this time. This Full Moon will be a Micromoon. It will be 4% smaller and 8.3% dimmer than a regular Full Moon."
     },
     {
@@ -476,6 +509,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "blood moon",
       "raw_description": "On March 14, between 06:26 GMT and 07:31 GMT, the entire Moon will pass through the Earth’s umbral shadow, creating a total lunar eclipse. As a result, the lunar disk will appear dark red — hence the name “Blood Moon”. The eclipse will be completely visible over North and South America, seen rising over Australia and northeast Asia and setting over Africa and Europe. How much do you know about eclipses? Test your knowledge of solar and lunar eclipses with our quiz."
     },
     {
@@ -490,6 +524,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "venus",
       "raw_description": "Venus is called the \"evening star\" and the \"morning star,\" depending on when it appears. But this March, something rare will happen! Around its inferior conjunction with the Sun on March 23, Venus will be visible in both the morning and evening skies for a few days in northern latitudes. Learn more about this special event in the article about Venus."
     },
     {
@@ -504,6 +539,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "equinox",
       "raw_description": "The March equinox marks the beginning of spring in the Northern Hemisphere and the first day of fall in the Southern Hemisphere. In 2025, the equinox occurs on March 20, at 09:02 GMT. We prepared a fun and educational quiz about equinoxes and solstices for you. Check if you can tell the difference between these two astronomical events!"
     },
     {
@@ -532,6 +568,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "total solar eclipse",
       "raw_description": "On March 29, between 08:50 GMT and 12:43 GMT, the Moon will pass between the Earth and the Sun, covering a part of the solar disc and creating a partial solar eclipse. The eclipse will be visible over Europe, north of Asia, north and west of Africa, much of North America, north of South America, the Atlantic Ocean, and the Arctic. Never miss the next eclipse! See the list of 5 upcoming lunar and solar eclipses, their dates, timelines, and visibility maps."
     },
     {
@@ -546,6 +583,7 @@
       "constellation": "Aries",
       "brightness": "Faint (binoculars recommended)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "conjunction",
       "raw_description": "On April 1, the 10%-illuminated Moon will be close to Uranus (mag 5.8) in the sky. Observe them through a pair of binoculars or a telescope in the constellation Aries."
     },
     {
@@ -560,6 +598,7 @@
       "constellation": "Taurus",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On April 1, the 18%-illuminated Moon will be close to the Pleiades star cluster (mag 1.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Taurus."
     },
     {
@@ -574,6 +613,7 @@
       "constellation": "Gemini",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On April 5, the 10%-illuminated Moon will be close to Mars (mag 0.5) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Gemini."
     },
     {
@@ -588,6 +628,7 @@
       "constellation": "Aquarius",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On April 10, Mercury (mag 1.0) will be close to Saturn (mag 1.2) in the sky. Saturn will be in the constellation Aquarius, and Mercury will be in the constellation Pisces. Observe them with the naked eye or through a pair of binoculars. However, in some locations, the objects will be too close to the horizon to be visible."
     },
     {
@@ -602,6 +643,7 @@
       "constellation": "Virgo",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "full moon",
       "raw_description": "The Full Pink Moon will occur on April 13 at 00:22 GMT. Our natural satellite will be in the constellation Virgo. Although the Full Moon technically lasts only a moment — when it is directly opposite the Sun relative to Earth — it appears fully illuminated a day before and after this time. This Full Moon will be a Micromoon. It will be 5.1% smaller and 11% dimmer than a regular Full Moon."
     },
     {
@@ -616,6 +658,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "Four planets — Neptune, Mercury, Saturn, and Venus — will align in the morning sky. Three of these planets (Mercury, Saturn, and Venus) will be visible to the naked eye. You'll need a telescope or high-powered binoculars to see Neptune."
     },
     {
@@ -630,6 +673,7 @@
       "constellation": "Pisces",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "neptune",
       "raw_description": "On April 17, Mercury (mag 0.6) will be close to Neptune (mag 7.8) in the sky. This will be the closest visible planetary conjunction of the year. Observe them through a pair of binoculars or a telescope in the constellation Pisces."
     },
     {
@@ -644,6 +688,7 @@
       "constellation": "",
       "brightness": "Bright (visible to naked eye)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "Mercury",
       "raw_description": "On April 21, Mercury (mag -0.3) will appear at its farthest apparent distance west from the Sun: the celestial bodies will be separated by 27°24'. The event is called the greatest elongation. It’s the best time to observe Mercury, so don’t miss the chance!"
     },
     {
@@ -658,6 +703,7 @@
       "constellation": "Lyra",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope required",
+      "keywords": "meteor shower",
       "raw_description": "According to the International Meteor Organization, the Lyrids are a medium-strength meteor shower that can occasionally produce bright fireballs. In 2025, viewing conditions are fine: the waning crescent Moon won’t be too much of a problem. It’s better to start looking for the Lyrids’ meteors after about 22:30 local time in mid-northern sites and after midnight in mid-southern sites."
     },
     {
@@ -672,6 +718,7 @@
       "constellation": "Pisces",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On April 25, Saturn (mag 1.2) will be close to Venus (mag -4.7) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Pisces."
     },
     {
@@ -686,6 +733,7 @@
       "constellation": "Pisces",
       "brightness": "Extremely bright (visible even in daylight)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On April 25, the 11%-illuminated Moon will be close to Venus (mag -4.8) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Pisces."
     },
     {
@@ -700,6 +748,7 @@
       "constellation": "Pisces",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On April 25, the 11%-illuminated Moon will be close to Saturn (mag 1.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Pisces."
     },
     {
@@ -714,6 +763,7 @@
       "constellation": "Pisces",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "conjunction",
       "raw_description": "On April 25, the 9%-illuminated Moon will be close to Neptune (mag 7.8) in the sky. Observe them through a pair of binoculars or a telescope in the constellation Pisces."
     },
     {
@@ -728,6 +778,7 @@
       "constellation": "Pisces",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On April 25, the 5%-illuminated Moon will be close to Mercury (mag 0.2) in the sky. The Moon will be in the constellation Pisces, and Mercury in the constellation Cetus. Observe them with the naked eye or through a pair of binoculars."
     },
     {
@@ -742,6 +793,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "new moon",
       "raw_description": "The New Moon will occur on April 27 at 19:31 GMT. At this point, our natural satellite will stay between the Earth and the Sun, so its bright side will be facing away from the Earth. It’s the best time for stargazing because the Moon’s light won’t hinder the view."
     },
     {
@@ -756,6 +808,7 @@
       "constellation": "Pisces",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On April 28, Saturn (mag 1.2) will be close to Venus (mag -4.7) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Pisces."
     },
     {
@@ -770,6 +823,7 @@
       "constellation": "Pisces",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "conjunction",
       "raw_description": "On May 2, Neptune (mag 7.8) will be close to Venus (mag -4.7) in the sky. Observe Venus with the naked eye and use a pair of binoculars to see Neptune in the constellation Pisces."
     },
     {
@@ -784,6 +838,7 @@
       "constellation": "Cancer",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On May 3, the 5%-illuminated Moon will be close to Mars (mag 0.9) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Cancer."
     },
     {
@@ -798,6 +853,7 @@
       "constellation": "Aquarius",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope required",
+      "keywords": "meteor shower",
       "raw_description": "On a clear dark night, the Eta Aquariids can produce up to 50 meteors per hour if you watch them from the southern latitudes. North of the equator, you can see 10-30 shooting stars per hour. Although the Moon will be 72% illuminated, it will set soon after midnight, so the sky will be dark and moonless during the peak. It is best to observe the Eta Aquariids in the hours before dawn."
     },
     {
@@ -812,6 +868,7 @@
       "constellation": "Libra",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "full moon",
       "raw_description": "The Full Flower Moon will occur on May 12 at 16:56 GMT. Our natural satellite will be in the constellation Libra. Although the Full Moon technically lasts only a moment — when it is directly opposite the Sun relative to Earth — it appears fully illuminated a day before and after this time. This Full Moon will be a Micromoon. It will be 5% smaller and 10% dimmer than a regular Full Moon."
     },
     {
@@ -826,6 +883,7 @@
       "constellation": "Scorpius",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On May 14, the 98%-illuminated Moon will be close to Antares (mag 1.1) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Scorpius."
     },
     {
@@ -840,6 +898,7 @@
       "constellation": "Pisces",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On May 22, the 28%-illuminated Moon will be close to Saturn (mag 1.1) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Pisces."
     },
     {
@@ -854,6 +913,7 @@
       "constellation": "Pisces",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "conjunction",
       "raw_description": "On May 22, the 26%-illuminated Moon will be close to Neptune (mag 7.8) in the sky. Observe them through a pair of binoculars or a telescope in the constellation Pisces."
     },
     {
@@ -868,6 +928,7 @@
       "constellation": "Pisces",
       "brightness": "Extremely bright (visible even in daylight)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On May 23, the 16%-illuminated Moon will be close to Venus (mag -4.5) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Pisces."
     },
     {
@@ -882,6 +943,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "new moon",
       "raw_description": "The New Moon will occur on May 27 at 03:02 GMT. At this point, our natural satellite will stay between the Earth and the Sun, so its bright side will be facing away from the Earth. It’s the best time for stargazing because the Moon’s light won’t hinder the view."
     },
     {
@@ -896,6 +958,7 @@
       "constellation": "",
       "brightness": "Extremely bright (visible even in daylight)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "venus",
       "raw_description": "On June 1, Venus (mag -4.4) will appear at its farthest apparent distance west from the Sun: the celestial bodies will be separated by 45°54'. The event is called the greatest elongation. It’s the best time to observe Venus, so don’t miss the chance!"
     },
     {
@@ -910,6 +973,7 @@
       "constellation": "Leo",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On June 1, the 33%-illuminated Moon will be close to Mars (mag 1.3) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Leo."
     },
     {
@@ -924,6 +988,7 @@
       "constellation": "Taurus",
       "brightness": "Bright (visible to naked eye)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On June 8, Jupiter (mag -1.9) will be close to Mercury (mag -1.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Taurus."
     },
     {
@@ -938,6 +1003,7 @@
       "constellation": "Scorpius",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On June 10, the 99%-illuminated Moon will be close to Antares (mag 1.1) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Scorpius."
     },
     {
@@ -952,6 +1018,7 @@
       "constellation": "Ophiuchus",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "full moon",
       "raw_description": "The Full Strawberry Moon will occur on June 11 at 07:44 GMT. Our natural satellite will be in the constellation Ophiuchus. Although the Full Moon technically lasts only a moment — when it is directly opposite the Sun relative to Earth — it appears fully illuminated a day before and after this time."
     },
     {
@@ -966,6 +1033,7 @@
       "constellation": "Leo",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On June 17, Mars (mag 1.3) will be close to Regulus (mag 1.4) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Leo."
     },
     {
@@ -980,6 +1048,7 @@
       "constellation": "Pisces",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On June 19, the 47%-illuminated Moon will be close to Saturn (mag 1.0) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Pisces."
     },
     {
@@ -994,6 +1063,7 @@
       "constellation": "Pisces",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "conjunction",
       "raw_description": "On June 19, the 47%-illuminated Moon will be close to Neptune (mag 7.8) in the sky. Observe them through a pair of binoculars or a telescope in the constellation Pisces."
     },
     {
@@ -1008,6 +1078,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "solstice",
       "raw_description": "The June solstice marks the first day of astronomical summer in the Northern Hemisphere and the first day of winter in the Southern Hemisphere. In 2025, it will happen on June 21, at 02:42 GMT. It will be the longest day in the Northern Hemisphere; the observers from the Southern Hemisphere, on the contrary, will experience the least amount of sunlight and the shortest day of the year. We prepared a fun and educational quiz about equinoxes and solstices for you. Check if you can tell the difference between these two astronomical events!"
     },
     {
@@ -1022,6 +1093,7 @@
       "constellation": "Taurus",
       "brightness": "Faint (binoculars recommended)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "conjunction",
       "raw_description": "On June 23, the 8%-illuminated Moon will be close to Uranus (mag 5.8) in the sky. Observe them through a pair of binoculars or a telescope in the constellation Taurus."
     },
     {
@@ -1036,6 +1108,7 @@
       "constellation": "Taurus",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On June 23, the 8%-illuminated Moon will be close to the Pleiades star cluster (mag 1.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Taurus."
     },
     {
@@ -1050,6 +1123,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "new moon",
       "raw_description": "The New Moon will occur on June 25 at 10:31 GMT. At this point, our natural satellite will stay between the Earth and the Sun, so its bright side will be facing away from the Earth. It’s the best time for stargazing because the Moon’s light won’t hinder the view."
     },
     {
@@ -1064,6 +1138,7 @@
       "constellation": "Cancer",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On June 27, the 5%-illuminated Moon will be close to Mercury (mag 0.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Cancer."
     },
     {
@@ -1078,6 +1153,7 @@
       "constellation": "Leo",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On June 30, the 32%-illuminated Moon will be close to Mars (mag 1.4) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Leo. Also, a lunar occultation of Mars will be visible over western Peru, Ecuador, western Colombia, and Clipperton Island."
     },
     {
@@ -1092,6 +1168,7 @@
       "constellation": "",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "mercury",
       "raw_description": "On July 4, Mercury (mag 0.5) will appear at its farthest apparent distance west from the Sun: the celestial bodies will be separated by 25°54'. The event is called the greatest elongation. It’s the best time to observe Mercury, so don’t miss the chance!"
     },
     {
@@ -1106,6 +1183,7 @@
       "constellation": "Taurus",
       "brightness": "Faint (binoculars recommended)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "uranus",
       "raw_description": "On July 4, Uranus (mag 5.8) will be close to Venus (mag -4.1) in the sky. Observe Venus with the naked eye and use a pair of binoculars to see Uranus in the constellation Taurus."
     },
     {
@@ -1120,6 +1198,7 @@
       "constellation": "Sagittarius",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "full moon",
       "raw_description": "The Full Buck Moon will occur on July 10 at 20:37 GMT. Our natural satellite will be in the constellation Sagittarius. Although the Full Moon technically lasts only a moment — when it is directly opposite the Sun relative to Earth — it appears fully illuminated a day before and after this time."
     },
     {
@@ -1134,6 +1213,7 @@
       "constellation": "Pisces",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On July 16, the 70%-illuminated Moon will be close to Saturn (mag 0.9) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Pisces."
     },
     {
@@ -1148,6 +1228,7 @@
       "constellation": "Pisces",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "conjunction",
       "raw_description": "On July 16, the 70%-illuminated Moon will be close to Neptune (mag 7.8) in the sky. Observe them through a pair of binoculars or a telescope in the constellation Pisces."
     },
     {
@@ -1162,6 +1243,7 @@
       "constellation": "Taurus",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On July 20, the 24%-illuminated Moon will be close to the Pleiades star cluster (mag 1.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Taurus."
     },
     {
@@ -1176,6 +1258,7 @@
       "constellation": "Gemini",
       "brightness": "Bright (visible to naked eye)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On July 23, the 3%-illuminated Moon will be close to Jupiter (mag -1.9) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Gemini."
     },
     {
@@ -1190,6 +1273,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "new moon",
       "raw_description": "The New Moon will occur on July 24 at 19:11 GMT. At this point, our natural satellite will stay between the Earth and the Sun, so its bright side will be facing away from the Earth. It’s the best time for stargazing because the Moon’s light won’t hinder the view."
     },
     {
@@ -1204,6 +1288,7 @@
       "constellation": "Leo",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On July 28, the 16%-illuminated Moon will be close to Mars (mag 1.5) in the sky, on the border between the constellation Leo and Virgo. Observe them with the naked eye or through a pair of binoculars. Also, a lunar occultation of Mars will be visible over a part of Antarctica."
     },
     {
@@ -1218,6 +1303,7 @@
       "constellation": "Aquarius",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope required",
+      "keywords": "meteor shower",
       "raw_description": "The Southern Delta Aquariids are another prolific meteor shower that is best observed from the Southern Hemisphere. Its meteors are quite faint and hard to spot under imperfect observation conditions. The Moon will be nearly half-lit but will set in the late evening, and won’t interfere with observations. The radiant rises in mid-evening and reaches its highest point around 2 a.m. local time — this is the best time to view the meteors."
     },
     {
@@ -1232,6 +1318,7 @@
       "constellation": "Capricornus",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "full moon",
       "raw_description": "The Full Sturgeon Moon will occur on August 9 at 07:55 GMT. Our natural satellite will be in the constellation Capricornus. Although the Full Moon technically lasts only a moment — when it is directly opposite the Sun relative to Earth — it appears fully illuminated a day before and after this time."
     },
     {
@@ -1246,6 +1333,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "planets",
       "raw_description": "Six planets — Mercury, Jupiter, Venus, Uranus, Neptune, and Saturn — will align in the morning sky. Four of these planets (Mercury, Jupiter, Venus, and Saturn) will be visible to the naked eye. You'll need a telescope or high-powered binoculars to see Neptune and Uranus."
     },
     {
@@ -1260,6 +1348,7 @@
       "constellation": "Perseus",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope required",
+      "keywords": "meteor shower",
       "raw_description": "The Perseids are rightfully considered the best meteor shower of the year north of the equator: they peak during warm August nights and produce lots of swift and bright meteors. Unfortunately, in 2025, the Perseids will reach their peak shortly after the Full Moon; a bright lunar disc will be lighting up the sky all night, badly affecting the number of visible meteors. A good way to reduce this effect is to hide from the moonlight in the shadow of a tall building or a tree. The best time to observe the Perseids is the predawn hours."
     },
     {
@@ -1274,6 +1363,7 @@
       "constellation": "Gemini",
       "brightness": "Very bright (easily visible)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On August 12, Venus (mag -4.0) will be close to Jupiter (mag -1.9) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Gemini."
     },
     {
@@ -1288,6 +1378,7 @@
       "constellation": "Pisces",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On August 12, the 88%-illuminated Moon will be close to Saturn (mag 0.7) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Pisces."
     },
     {
@@ -1302,6 +1393,7 @@
       "constellation": "Pisces",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "conjunction",
       "raw_description": "On August 12, the 88%-illuminated Moon will be close to Neptune (mag 7.8) in the sky. Observe them through a pair of binoculars or a telescope in the constellation Pisces."
     },
     {
@@ -1316,6 +1408,7 @@
       "constellation": "Taurus",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On August 16, the 46%-illuminated Moon will be close to the Pleiades star cluster (mag 1.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Taurus."
     },
     {
@@ -1330,6 +1423,7 @@
       "constellation": "",
       "brightness": "Bright (visible to naked eye)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "mercury",
       "raw_description": "On August 19, Mercury (mag -0.2) will appear at its farthest apparent distance west from the Sun: the celestial bodies will be separated by 18°36'. The event is called the greatest elongation. It’s the best time to observe Mercury, so don’t miss the chance!"
     },
     {
@@ -1344,6 +1438,7 @@
       "constellation": "Gemini",
       "brightness": "Bright (visible to naked eye)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "jupiter moon",
       "raw_description": "On August 19, the 13%-illuminated Moon will be close to Jupiter (mag -1.9) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Gemini."
     },
     {
@@ -1358,6 +1453,7 @@
       "constellation": "Gemini",
       "brightness": "Very bright (easily visible)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "moon solar corona venus",
       "raw_description": "On August 20, the 9%-illuminated Moon will be close to Venus (mag -3.9) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Gemini."
     },
     {
@@ -1372,6 +1468,7 @@
       "constellation": "Cancer",
       "brightness": "Bright (visible to naked eye)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On August 21, the 3%-illuminated Moon will be close to Mercury (mag -0.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Cancer."
     },
     {
@@ -1386,6 +1483,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "new moon",
       "raw_description": "The New Moon will occur on August 23 at 06:06 GMT. At this point, our natural satellite will stay between the Earth and the Sun, so its bright side will be facing away from the Earth. It’s the best time for stargazing because the Moon’s light won’t hinder the view."
     },
     {
@@ -1400,6 +1498,7 @@
       "constellation": "Virgo",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On August 26, the 11%-illuminated Moon will be close to Mars (mag 1.6) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Virgo."
     },
     {
@@ -1414,6 +1513,7 @@
       "constellation": "Aquarius",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "full moon",
       "raw_description": "The Full Corn Moon will occur on September 7 at 18:09 GMT. Our natural satellite will be in the constellation Aquarius. Although the Full Moon technically lasts only a moment — when it is directly opposite the Sun relative to Earth — it appears fully illuminated a day before and after this time."
     },
     {
@@ -1428,6 +1528,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "blood moon",
       "raw_description": "On September 7, between 17:30 GMT and 18:52 GMT, the entire Moon will pass through the Earth’s umbral shadow, creating a total lunar eclipse. As a result, the lunar disk will appear dark red — hence the name “Blood Moon”. The eclipse will be completely visible over the east of Africa, Asia, and Australia, and it will be seen rising over most of Africa and Europe and setting over the Central Pacific Ocean. How much do you know about eclipses? Test your knowledge of solar and lunar eclipses with our quiz."
     },
     {
@@ -1442,6 +1543,7 @@
       "constellation": "Pisces",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "saturn moons concept art",
       "raw_description": "On September 8, the 98%-illuminated Moon will be close to Saturn (mag 0.6) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Pisces."
     },
     {
@@ -1456,6 +1558,7 @@
       "constellation": "Pisces",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "moon neptune",
       "raw_description": "On September 8, the 98%-illuminated Moon will be close to Neptune (mag 7.7). Observe them through a pair of binoculars or a telescope in the constellation Pisces."
     },
     {
@@ -1470,6 +1573,7 @@
       "constellation": "Taurus",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "moon pleiades",
       "raw_description": "On September 12, the 68%-illuminated Moon will be close to the Pleiades star cluster (mag 1.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Taurus."
     },
     {
@@ -1484,6 +1588,7 @@
       "constellation": "Gemini",
       "brightness": "Bright (visible to naked eye)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "moon jupiter",
       "raw_description": "On September 16, the 29%-illuminated Moon will be close to Jupiter (mag -2.0) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Gemini."
     },
     {
@@ -1498,6 +1603,7 @@
       "constellation": "Leo",
       "brightness": "Very bright (easily visible)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On September 19, Venus (mag -3.9) will be close to Regulus (mag 1.4) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Leo."
     },
     {
@@ -1512,6 +1618,7 @@
       "constellation": "Leo",
       "brightness": "Very bright (easily visible)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On September 19, the 6%-illuminated Moon will be close to Venus (mag -3.9) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Leo. Also, a lunar occultation of Venus will be visible over Africa, Europe, western Russia, Canada, Greenland and Asia."
     },
     {
@@ -1526,6 +1633,7 @@
       "constellation": "Pisces",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "saturn",
       "raw_description": "Saturn will reach opposition on September 21, 2025, at 05:37 GMT. This is the best time to observe and photograph Saturn, as it will be brighter than at any other time of the year and visible throughout the night. During the opposition, Saturn will shine with a magnitude of 0.6 in the constellation Pisces. It will be easily visible to the naked eye. To explore the planet's rings, use a telescope."
     },
     {
@@ -1540,6 +1648,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "new moon",
       "raw_description": "The New Moon will occur on September 21 at 19:54 GMT. At this point, our natural satellite will stay between the Earth and the Sun, so its bright side will be facing away from the Earth. It’s the best time for stargazing because the Moon’s light won’t hinder the view."
     },
     {
@@ -1554,6 +1663,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "solar eclipse",
       "raw_description": "On September 21, between 17:29 GMT and 21:53 GMT, the Moon will pass between the Earth and the Sun, covering a part of the solar disc and creating a partial solar eclipse. The eclipse will be visible over the south of Australia, the Pacific and Atlantic Oceans, and Antarctica. Never miss the next eclipse! See the list of 5 upcoming lunar and solar eclipses, their dates, timelines, and visibility maps."
     },
     {
@@ -1568,6 +1678,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "equinox",
       "raw_description": "The September equinox marks the beginning of fall in the Northern Hemisphere and the first day of spring in the Southern Hemisphere. In 2025, the equinox will occur on September 22, at 18:20 GMT. We prepared a fun and educational quiz about equinoxes and solstices for you. Check if you can tell the difference between these two astronomical events!"
     },
     {
@@ -1582,6 +1693,7 @@
       "constellation": "Pisces",
       "brightness": "Varies",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "neptune",
       "raw_description": "Neptune will reach opposition on September 23, 2025, at 12:45 GMT. This is the best time to observe and photograph Neptune, as it will be brighter than at any other time of the year and visible throughout the night. During the opposition, Neptune will be at a magnitude of 7.7 in the constellation Pisces. However, even at this time, Neptune is too faint to be visible to the naked eye. Use a pair of binoculars or a telescope to see the planet."
     },
     {
@@ -1596,6 +1708,7 @@
       "constellation": "Virgo",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "Two Moons and the Pleiades from Mars",
       "raw_description": "On September 24, the 7%-illuminated Moon will be close to Mars (mag 1.6) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Virgo."
     },
     {
@@ -1610,6 +1723,7 @@
       "constellation": "Pisces",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "moon saturn",
       "raw_description": "On October 6, the 98%-illuminated Moon will be close to Saturn (mag 0.6) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Pisces."
     },
     {
@@ -1624,6 +1738,7 @@
       "constellation": "Pisces",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "moon neptune",
       "raw_description": "On October 6, the 98%-illuminated Moon will be close to Neptune (mag 7.8) in the sky. Observe them through a pair of binoculars or a telescope in the constellation Pisces."
     },
     {
@@ -1638,6 +1753,7 @@
       "constellation": "Pisces",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "full moon",
       "raw_description": "The Full Harvest Moon will occur on October 7 at 03:47 GMT. Our natural satellite will be in the constellation Pisces. Although the Full Moon technically lasts only a moment — when it is directly opposite the Sun relative to Earth — it appears fully illuminated a day before and after this time. This Full Moon will be a Supermoon. It will be 6.6% bigger and 13% brighter than a regular Full Moon."
     },
     {
@@ -1652,6 +1768,7 @@
       "constellation": "Taurus",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "moon",
       "raw_description": "On October 10, the 88%-illuminated Moon will be close to the Pleiades star cluster (mag 1.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Taurus."
     },
     {
@@ -1666,6 +1783,7 @@
       "constellation": "Gemini",
       "brightness": "Very bright (easily visible)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "moon jupiter",
       "raw_description": "On October 13, the 58%-illuminated Moon will be close to Jupiter (mag -2.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Gemini."
     },
     {
@@ -1680,6 +1798,7 @@
       "constellation": "Virgo",
       "brightness": "Very bright (easily visible)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "moon venus",
       "raw_description": "On October 19, the 3%-illuminated Moon will be close to Venus (mag -3.9) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Virgo."
     },
     {
@@ -1694,6 +1813,7 @@
       "constellation": "Libra",
       "brightness": "Bright (visible to naked eye)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On October 19, Mercury (mag -0.2) will be close to Mars (mag 1.4) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Libra."
     },
     {
@@ -1708,6 +1828,7 @@
       "constellation": "Orion",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope required",
+      "keywords": "meteor shower",
       "raw_description": "The Orionids are a medium-strength meteor shower capable of showing occasional bursts of activity. For instance, according to the American Meteor Society, in 2006-2009, the Orionids’ peak rates nearly rivaled those of the Perseids, reaching 50-75 meteors per hour. This year, observing conditions are ideal, as the meteor shower peaks on the night of the New Moon. Watch for Orionid meteors starting from midnight until dawn."
     },
     {
@@ -1722,6 +1843,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "new moon",
       "raw_description": "The New Moon will occur on October 21 at 12:25 GMT. At this point, our natural satellite will stay between the Earth and the Sun, so its bright side will be facing away from the Earth. It’s the best time for stargazing because the Moon’s light won’t hinder the view."
     },
     {
@@ -1736,6 +1858,7 @@
       "constellation": "Libra",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "Moon as viewed from Mars",
       "raw_description": "On October 23, the 4%-illuminated Moon will be close to Mars (mag 1.5) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Libra."
     },
     {
@@ -1750,6 +1873,7 @@
       "constellation": "Libra",
       "brightness": "Bright (visible to naked eye)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On October 23, the 4%-illuminated Moon will be close to Mercury (mag -0.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Libra."
     },
     {
@@ -1764,6 +1888,7 @@
       "constellation": "",
       "brightness": "Bright (visible to naked eye)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "mercury",
       "raw_description": "On October 29, Mercury (mag -0.1) will appear at its farthest apparent distance east from the Sun: the celestial bodies will be separated by 23°54'. The event is called the greatest elongation. It’s the best time to observe Mercury, so don’t miss the chance!"
     },
     {
@@ -1778,6 +1903,7 @@
       "constellation": "Pisces",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "moon saturn",
       "raw_description": "On November 2, the 86%-illuminated Moon will be close to Saturn (mag 0.8) in the sky. The Moon will be in the constellation Pisces and Saturn will be in the constellation Aquarius. Observe them with the naked eye or through a pair of binoculars."
     },
     {
@@ -1792,6 +1918,7 @@
       "constellation": "Pisces",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "conjunction",
       "raw_description": "On November 2, the 88%-illuminated Moon will be close to Neptune (mag 7.8) in the sky. Observe them through a pair of binoculars or a telescope in the constellation Pisces."
     },
     {
@@ -1806,6 +1933,7 @@
       "constellation": "Taurus",
       "brightness": "5-10",
       "requires_equipment": "No special equipment needed",
+      "keywords": "meteor shower",
       "raw_description": "This meteor shower is one of the two branches of the large Taurids meteor stream. The Southern Taurids reach their early maximum on October 9-10, and the main peak of their activity is on the night of November 4-5. Occasionally they produce very bright meteors. However, in 2025 their November peak falls on the Full Moon, so it's better to postpone observing for at least a few days until the moonlight is less intrusive."
     },
     {
@@ -1820,6 +1948,7 @@
       "constellation": "Aries",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "full moon",
       "raw_description": "The Full Hunter’s Moon will occur on November 5 at 13:19 GMT. Our natural satellite will be in the constellation Aries. Although the Full Moon technically lasts only a moment — when it is directly opposite the Sun relative to Earth — it appears fully illuminated a day before and after this time. This Full Moon will be a Supermoon. It will also be the biggest and brightest Supermoon of the year (7.9% bigger and 16% brighter than a regular Full Moon)."
     },
     {
@@ -1834,6 +1963,7 @@
       "constellation": "Taurus",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "moon pleiades",
       "raw_description": "On November 6, the 98%-illuminated Moon will be close to the Pleiades star cluster (mag 1.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Taurus."
     },
     {
@@ -1848,6 +1978,7 @@
       "constellation": "Gemini",
       "brightness": "Very bright (easily visible)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "moon jupiter",
       "raw_description": "On November 10, the 70%-illuminated Moon will be close to Jupiter (mag -2.4) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Gemini."
     },
     {
@@ -1862,6 +1993,7 @@
       "constellation": "Taurus",
       "brightness": "Faint (binoculars recommended)",
       "requires_equipment": "Binoculars recommended",
+      "keywords": "meteor shower",
       "raw_description": "The Northern Taurids are a part of the broad Taurid stream. It’s a quite weak meteor shower, producing up to 5 meteors per hour at maximum. However, it’s famous for producing many bright fireballs. In 2025, according to IMO, we can expect the enhanced rates of brighter Taurids a week around November 3. This falls on the period around the Full Moon, so the bright moonlight will hinder the observations."
     },
     {
@@ -1876,6 +2008,7 @@
       "constellation": "Leo",
       "brightness": "10-15",
       "requires_equipment": "No special equipment needed",
+      "keywords": "meteor shower",
       "raw_description": "The Leonids are most famous for producing spectacular meteor storms: for instance, in 1966, observers in the United States reported seeing 40 to 50 meteors per second, although much more often, we see the usual 10 meteors per hour. In 2025, the Leonids will peak three days before the New Moon, so moonlight will present minimal interference. The Leonids’ radiant rises around midnight and reaches the highest point in the sky at dawn."
     },
     {
@@ -1890,6 +2023,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "new moon",
       "raw_description": "The New Moon will occur on November 20 at 06:47 GMT. At this point, our natural satellite will stay between the Earth and the Sun, so its bright side will be facing away from the Earth. It’s the best time for stargazing because the Moon’s light won’t hinder the view."
     },
     {
@@ -1904,6 +2038,7 @@
       "constellation": "Taurus",
       "brightness": "Varies",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "uranus",
       "raw_description": "Uranus will reach opposition on November 21, 2025, at 12:17 GMT. This is the best time to observe and photograph Uranus, as it will be brighter than at any other time of the year and visible throughout the night. During the opposition, Uranus will be at a magnitude of 5.6 in the constellation Taurus. However, even at this time, Uranus is too faint to be visible to the naked eye. Use a pair of binoculars or a telescope to see the planet."
     },
     {
@@ -1918,6 +2053,7 @@
       "constellation": "Pisces",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "moon saturn",
       "raw_description": "On November 29, the 66%-illuminated Moon will be close to Saturn (mag 0.9) in the sky. The Moon will be in the constellation Pisces, and Saturn will be in the constellation Aquarius. Observe them with the naked eye or through a pair of binoculars."
     },
     {
@@ -1932,6 +2068,7 @@
       "constellation": "Pisces",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "conjunction",
       "raw_description": "On November 30, the 74%-illuminated Moon will be close to Neptune (mag 7.8) in the sky. Observe them through a pair of binoculars or a telescope in the constellation Pisces."
     },
     {
@@ -1946,6 +2083,7 @@
       "constellation": "Taurus",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "moon pleiades",
       "raw_description": "On December 4, the 98%-illuminated Moon will be close to the Pleiades star cluster (mag 1.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Taurus."
     },
     {
@@ -1960,6 +2098,7 @@
       "constellation": "Taurus",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "full moon",
       "raw_description": "The Full Cold Moon will occur on December 4 at 23:14 GMT. Our natural satellite will be in the constellation Taurus. Although the Full Moon technically lasts only a moment — when it is directly opposite the Sun relative to Earth — it appears fully illuminated a day before and after this time. This Full Moon will be a Supermoon. It will be 7.9% bigger and 15% brighter than a regular Full Moon."
     },
     {
@@ -1974,6 +2113,7 @@
       "constellation": "",
       "brightness": "Bright (visible to naked eye)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "mercury",
       "raw_description": "On December 7, Mercury (mag -0.5) will appear at its farthest apparent distance west from the Sun: the celestial bodies will be separated by 20°42'. The event is called the greatest elongation. It’s the best time to observe Mercury, so don’t miss the chance!"
     },
     {
@@ -1988,6 +2128,7 @@
       "constellation": "Gemini",
       "brightness": "Very bright (easily visible)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "moon jupiter",
       "raw_description": "On December 7, the 89%-illuminated Moon will be close to Jupiter (mag -2.6) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Gemini."
     },
     {
@@ -2002,6 +2143,7 @@
       "constellation": "Gemini",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope required",
+      "keywords": "meteor shower",
       "raw_description": "The Geminids are one of the most spectacular meteor showers of the year. Their meteors are bright, plentiful, intensely colored, and slower moving. Luckily, in 2025, viewing conditions are favorable as the Moon is in the waning crescent phase. North of the equator, the Geminids’ radiant rises around sunset, so you can start observations already in the evening. In the Southern Hemisphere, the radiant appears in the sky around local midnight and culminates at about 2 a.m. local time."
     },
     {
@@ -2016,6 +2158,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "new moon",
       "raw_description": "The New Moon will occur on December 20 at 01:43 GMT. At this point, our natural satellite will stay between the Earth and the Sun, so its bright side will be facing away from the Earth. It’s the best time for stargazing because the Moon’s light won’t hinder the view."
     },
     {
@@ -2030,6 +2173,7 @@
       "constellation": "",
       "brightness": "Varies",
       "requires_equipment": "No special equipment needed",
+      "keywords": "solstice",
       "raw_description": "The December solstice marks the first day of astronomical winter in the Northern Hemisphere and the first day of summer in the Southern Hemisphere. In 2025, it will happen on December 21, at 15:03 GMT. It will be the shortest day in the Northern Hemisphere; the Southern Hemisphere, on the contrary, will experience the greatest amount of sunlight and the longest day of the year. We prepared a fun and educational quiz about equinoxes and solstices for you. Check if you can tell the difference between these two astronomical events!"
     },
     {
@@ -2044,6 +2188,7 @@
       "constellation": "Ursa Minor",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope required",
+      "keywords": "meteor shower",
       "raw_description": "The Ursids are a minor meteor shower that always peaks around the December solstice and produces 5-10 shooting stars per hour. This shower is often neglected because the mighty Geminids occur just a week before it. In 2025, you should definitely give the Ursids a chance, as they will occur just two days after the New Moon, so the sky will be dark. The Ursids’ radiant never sets below the horizon in northern locations, so you can observe the meteor shower all night."
     },
     {
@@ -2058,6 +2203,7 @@
       "constellation": "Pisces",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "conjunction",
       "raw_description": "On December 27, the 31%-illuminated Moon will be close to Saturn (mag 1.0) in the sky. The Moon will be in the constellation Pisces and Saturn will be in the constellation Aquarius. Observe them with the naked eye or through a pair of binoculars."
     },
     {
@@ -2072,6 +2218,7 @@
       "constellation": "Pisces",
       "brightness": "Very faint (telescope required)",
       "requires_equipment": "Telescope or binoculars required",
+      "keywords": "conjunction",
       "raw_description": "On December 27, the 34%-illuminated Moon will be close to Neptune (mag 7.8) in the sky. Observe them through a pair of binoculars or a telescope in the constellation Pisces."
     },
     {
@@ -2086,6 +2233,7 @@
       "constellation": "Taurus",
       "brightness": "Moderately bright (visible in dark skies)",
       "requires_equipment": "No special equipment needed",
+      "keywords": "moon pleiades",
       "raw_description": "On December 31, the 88%-illuminated Moon will be close to the Pleiades star cluster (mag 1.2) in the sky. Observe them with the naked eye or through a pair of binoculars in the constellation Taurus."
     }
   ],
