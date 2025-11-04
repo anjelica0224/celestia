@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { CONFIG } from '../config';
+import { CONFIG } from '../constants/keys';
 export const fetchEvents = async(date: string) : Promise<Events[]> => {
     const allEvents = await axios.get(CONFIG.BASE_URL!);
     const filteredEvents = allEvents.data.events.filter((item: any)=> item.date === date);
@@ -19,7 +19,7 @@ export const fetchDescription = async(id: number) : Promise<Events> => {
 }
 
 export const fetchImages = async(query: string) : Promise<string> => {
-    const response = await axios.get(`${CONFIG.NASA_URL}/search?q=${query}&media_type=image&year_start=2005&year_end=2025&api_key=${process.env.NASA_API_KEY}`);
+    const response = await axios.get(`${CONFIG.NASA_URL}/search?q=${query}&media_type=image&year_start=2005&year_end=2025`);
     const items = response.data.collection.items;
     return items.length > 0 ? items[0].links[0].href : CONFIG.DEFAULT_IMAGE;
 }
