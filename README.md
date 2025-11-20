@@ -7,18 +7,18 @@ a mobile stargazing app that shows you what's happening in the night sky this we
 <table>
   <tr>
     <td>
-      <img src="assets/images/vid.mp4" alt="Celestia App Demo" width="300" height="300"  />
+      <img src="assets/images/demo.webp" alt="Celestia App Demo" width="300" />
     </td>
     <td>
-      <img src="assets/images/ss1.jpeg" alt="Event Details" width="300" height="300" />
+      <img src="assets/images/ss1.jpeg" alt="Event Details" width="300" />
     </td>
   </tr>
   <tr>
     <td>
-      <img src="assets/images/ss2.jpeg" alt="Explore Gallery" width="300" height="300" />
+      <img src="assets/images/ss2.jpeg" alt="Explore Gallery" width="300" />
     </td>
     <td>
-      <img src="assets/images/ss3.jpeg" alt="Explore Gallery" width="300" height="300" />
+      <img src="assets/images/ss3.jpeg" alt="Explore Gallery" width="300" />
     </td>
   </tr>
 </table>
