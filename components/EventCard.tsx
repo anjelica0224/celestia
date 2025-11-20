@@ -1,14 +1,14 @@
 import { CONFIG } from "@/constants/keys";
 import { fetchImages } from "@/services/api";
 import { useEffect, useState } from "react";
-import { View, Text, Image, TouchableOpacity, ActivityIndicator } from "react-native";
+import { ActivityIndicator, Image, Text, TouchableOpacity, View } from "react-native";
 
 interface EventCardProps {
   event: Events;
   onPress?: () => void;
 }
 
-export default async function EventCard({ event, onPress }: EventCardProps) {
+export default function EventCard({ event, onPress }: EventCardProps) {
   const [imageUrl, setImageUrl] = useState<string>(CONFIG.DEFAULT_IMAGE);
   const [imageLoading, setImageLoading] = useState(true);
   useEffect(() => {
@@ -51,8 +51,8 @@ export default async function EventCard({ event, onPress }: EventCardProps) {
             resizeMode="cover"
           />
         )}
-        {/* Gradient overlay for better text visibility */}
-        <View className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-gray-900" />
+        <View className="absolute inset-0" style={{ backgroundColor: "rgba(0,0,0,0.25)" }} />
+        <View className="absolute bottom-0 left-0 right-0 h-20" style={{ backgroundColor: "rgba(0,0,0,0.45)" }} />
       </View>
       
       <View className="p-4">
