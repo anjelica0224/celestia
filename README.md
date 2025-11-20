@@ -1,50 +1,51 @@
-# Welcome to your Expo app 👋
+# celestia 
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+a mobile stargazing app that shows you what's happening in the night sky this week. built with react native.
 
-## Get started
+## demo
 
-1. Install dependencies
+<table>
+  <tr>
+    <td>
+      <img src="assets/images/vid.mp4" alt="Celestia App Demo" width="300" height="300"  />
+    </td>
+    <td>
+      <img src="assets/images/ss1.jpeg" alt="Event Details" width="300" height="300" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="assets/images/ss2.jpeg" alt="Explore Gallery" width="300" height="300" />
+    </td>
+    <td>
+      <img src="assets/images/ss3.jpeg" alt="Explore Gallery" width="300" height="300" />
+    </td>
+  </tr>
+</table>
 
-   ```bash
-   npm install
-   ```
 
-2. Start the app
+browse celestial events by date, explore event details with NASA imagery, and swipe through a gallery of space photos.
 
-   ```bash
-   npx expo start
-   ```
+## what's inside
 
-In the output, you'll find options to open the app in a
+- **react native + expo** - built for iOS & Android
+- **nativewind** - tailwind but for mobile
+- **NASA Image and Video Library API** - pulls real space imagery from NASA's image library
+- **custom event data** - astronomy events for 2025
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## run it
 
 ```bash
-npm run reset-project
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## later
 
-## Learn more
+thinking about adding **appwrite** for faster data loading and maybe some user features like saving favorite events.
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+made for stargazers ✨
