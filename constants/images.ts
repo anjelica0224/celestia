@@ -1,4 +1,4 @@
-import bg from '../assets/images/stars.jpg';
+import bg from '../assets/images/stars3.jpg';
 
 export const images = {
     bg,
