@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import EventPreviewCard from "@/components/EventPreviewCard";
 import Header from "@/components/Header";
@@ -57,7 +57,11 @@ export default function Index() {
     return Array.from({ length: DAYS_TO_SHOW }, (_, index) => {
       const targetDate = addDays(today, index);
       const label =
-        index === 0 ? "Tonight" : index === 1 ? "Tomorrow" : HUMAN_DATE.format(new Date(targetDate));
+        index === 0
+          ? "Tonight"
+          : index === 1
+            ? "Tomorrow"
+            : HUMAN_DATE.format(new Date(targetDate));
       return {
         date: targetDate,
         label,
@@ -70,7 +74,9 @@ export default function Index() {
     return (
       <View className="flex-1 bg-[#050B1A] items-center justify-center">
         <ActivityIndicator size="large" color="#7AD6FF" />
-        <Text className="text-white/80 mt-4">Calibrating tonight&apos;s map...</Text>
+        <Text className="text-white/80 mt-4">
+          Calibrating tonight&apos;s map...
+        </Text>
       </View>
     );
   }
@@ -79,7 +85,8 @@ export default function Index() {
     return (
       <View className="flex-1 bg-[#050B1A] items-center justify-center px-8">
         <Text className="text-white/80 text-center">
-          Couldn&apos;t download the sky guide. Please pull to refresh or try again shortly.
+          Couldn&apos;t download the sky guide. Please pull to refresh or try
+          again shortly.
         </Text>
       </View>
     );
@@ -94,7 +101,7 @@ export default function Index() {
   };
 
   return (
-    <ImageBackground source={images.bg} className="flex-1" resizeMode="cover" >
+    <ImageBackground source={images.bg} className="flex-1" resizeMode="cover">
       <View className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-black/95" />
       <ScrollView
         contentContainerStyle={{
@@ -105,8 +112,12 @@ export default function Index() {
       >
         <Header />
         <View className="mt-10">
-          <Text className="text-white/60 uppercase tracking-[6px] text-xs">Celestia</Text>
-          <Text className="text-white text-4xl font-light mt-2">Stargaze tonight</Text>
+          <Text className="text-white/60 uppercase tracking-[6px] text-xs">
+            Celestia
+          </Text>
+          <Text className="text-white text-4xl font-light mt-2">
+            Stargaze tonight
+          </Text>
           <Text className="text-white/70 mt-3 leading-6">
             Here&apos;s what to watch this week.
           </Text>
@@ -119,7 +130,9 @@ export default function Index() {
               <TouchableOpacity
                 key={section.date}
                 className={`mr-3 mb-3 px-5 py-2 rounded-full border ${
-                  isActive ? "bg-white/30 border-transparent" : "border-white/40"
+                  isActive
+                    ? "bg-white/30 border-transparent"
+                    : "border-white/40"
                 }`}
                 onPress={() => handleTabPress(index)}
               >
@@ -136,7 +149,10 @@ export default function Index() {
 
         <View className="bg-white/5 border border-white/10 rounded-3xl p-6 mt-4">
           <Text className="text-white/70 text-sm">{activeSection?.label}</Text>
-          <Text className="text-white text-2xl font-semibold mt-1" numberOfLines={2}>
+          <Text
+            className="text-white text-2xl font-semibold mt-1"
+            numberOfLines={2}
+          >
             {activeEvents[0]?.event_name ?? "Clear skies ahead"}
           </Text>
           <Text className="text-white/60 mt-2" numberOfLines={3}>
@@ -145,33 +161,49 @@ export default function Index() {
           </Text>
         </View>
 
-        <View style={{ height: 440 }} className="mt-10">
+        <View style={{ minHeight: 440 }} className="mt-10">
           <Carousel
             ref={carouselRef}
             width={screenWidth - 48}
-            height={440}
+            height={Math.max(
+              440,
+              activeEvents.length * 320 + (activeEvents.length - 1) * 24,
+            )}
             data={sections}
             loop={false}
             pagingEnabled
             onSnapToItem={setActiveIndex}
             renderItem={({ item }) => (
-              <View className="flex-1 gap-6">
-                {item.events.length > 0 ? (
-                  item.events.map((event) => (
-                    <EventPreviewCard
-                      key={event.id}
-                      event={event}
-                      onPress={() =>
-                        router.push({ pathname: "/event/[id]", params: { id: event.id.toString() } })
-                      }
-                    />
-                  ))
-                ) : (
-                  <View className="flex-1 items-center justify-center rounded-[32px] border border-white/10 bg-white/5">
-                    <Text className="text-white/60">No events forecast for this night.</Text>
-                  </View>
-                )}
-              </View>
+              <ScrollView
+                nestedScrollEnabled
+                showsVerticalScrollIndicator={false}
+              >
+                <View className="gap-6 pb-4">
+                  {item.events.length > 0 ? (
+                    item.events.map((event) => (
+                      <EventPreviewCard
+                        key={event.id}
+                        event={event}
+                        onPress={() =>
+                          router.push({
+                            pathname: "/event/[id]",
+                            params: { id: event.id.toString() },
+                          })
+                        }
+                      />
+                    ))
+                  ) : (
+                    <View
+                      className="items-center justify-center rounded-[32px] border border-white/10 bg-white/5"
+                      style={{ height: 320 }}
+                    >
+                      <Text className="text-white/60">
+                        No events forecast for this night.
+                      </Text>
+                    </View>
+                  )}
+                </View>
+              </ScrollView>
             )}
           />
         </View>
@@ -179,4 +211,3 @@ export default function Index() {
     </ImageBackground>
   );
 }
-

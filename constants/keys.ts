@@ -1,5 +1,5 @@
 export const CONFIG = {
-  BASE_URL: "https://raw.githubusercontent.com/anjelica0224/celestia/refs/heads/main/assets/data/astronomy_events_2025.json",
+  SKY_CALENDAR_URL: "https://in-the-sky.org/newscalyear_ical.php",
   NASA_URL: "https://images-api.nasa.gov",
-  DEFAULT_IMAGE: "https://example.com/default.jpg", 
+  DEFAULT_IMAGE: "https://example.com/default.jpg",
 };

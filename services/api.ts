@@ -1,9 +1,9 @@
 import axios from "axios";
 import { CONFIG } from "../constants/keys";
+import { fetchSkyEvents } from "./intheskyapi";
 
 export const fetchAllEvents = async (): Promise<Events[]> => {
-  const response = await axios.get(CONFIG.BASE_URL!);
-  return response.data.events;
+  return fetchSkyEvents();
 };
 
 export const fetchEvents = async (date: string): Promise<Events[]> => {
@@ -30,9 +30,10 @@ export const fetchDescription = async (id: number): Promise<string> => {
 };
 
 export const fetchImages = async (query: string): Promise<string> => {
+  const year = new Date().getFullYear();
   const response = await axios.get(
-    `${CONFIG.NASA_URL}/search?q=${query}&media_type=image&year_start=2005&year_end=2025`
+    `${CONFIG.NASA_URL}/search?q=${query}&media_type=image&year_start=2005&year_end=${year}`,
   );
-    const items = response.data.collection.items;
-    return items.length > 0 ? items[0].links[0].href : CONFIG.DEFAULT_IMAGE;
+  const items = response.data.collection.items;
+  return items.length > 0 ? items[0].links[0].href : CONFIG.DEFAULT_IMAGE;
 };
