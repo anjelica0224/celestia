@@ -1,15 +1,16 @@
 import axios from "axios";
 import { CONFIG } from "../constants/keys";
 import {
-    brightnessFromCategory,
-    categorize,
-    decodeEntities,
-    displayDate,
-    equipmentFromCategory,
-    parseICalDate,
+  brightnessFromCategory,
+  categorize,
+  decodeEntities,
+  displayDate,
+  equipmentFromCategory,
+  getAllKeywords,
+  parseICalDate,
 } from "../utils/eventUtils";
 
-const CACHE_MS = 60 * 60 * 1000; // 1 hour
+const CACHE_MS = 60 * 60 * 1000;
 let _cache: Events[] | null = null;
 let _cacheTime = 0;
 
@@ -21,12 +22,10 @@ function parseICal(text: string): Events[] {
     const block = blocks[i].split("END:VEVENT")[0];
 
     const getField = (name: string): string => {
-      // Handle multi-line folded fields (lines starting with space are continuations)
       const regex = new RegExp(`^${name}:(.*)`, "m");
       const match = block.match(regex);
       if (!match) return "";
       let value = match[1].trim();
-      // Check for continuation lines
       const startIdx = block.indexOf(match[0]);
       const afterMatch = block.slice(startIdx + match[0].length);
       const lines = afterMatch.split("\n");
@@ -48,12 +47,14 @@ function parseICal(text: string): Events[] {
     if (!summary || !dtstart) continue;
 
     const { date, time } = parseICalDate(dtstart);
-    const { category, keywords } = categorize(summary);
 
-    // Strip the trailing URL from description if present
     const cleanDesc = description
       .replace(/\s*https?:\/\/in-the-sky\.org\/\S*/g, "")
       .trim();
+
+    // Pass description as fallback so vague summaries still get a real category
+    const { category, keywords } = categorize(summary, cleanDesc);
+    const allKeywords = getAllKeywords(summary, cleanDesc, category);
 
     events.push({
       id: i,
@@ -68,12 +69,12 @@ function parseICal(text: string): Events[] {
       brightness: brightnessFromCategory(category),
       requires_equipment: equipmentFromCategory(category),
       keywords,
+      allKeywords,
       raw_description: cleanDesc || summary,
       detail_url: url || "",
     });
   }
 
-  // Sort by date, then re-assign stable IDs
   events.sort((a, b) => a.date.localeCompare(b.date));
   events.forEach((e, idx) => (e.id = idx + 1));
 

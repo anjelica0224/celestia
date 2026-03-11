@@ -1,7 +1,13 @@
 import { CONFIG } from "@/constants/keys";
 import { fetchImages } from "@/services/api";
 import { useEffect, useState } from "react";
-import { ActivityIndicator, Image, Text, TouchableOpacity, View } from "react-native";
+import {
+  ActivityIndicator,
+  ImageBackground,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 
 interface EventCardProps {
   event: Events;
@@ -11,72 +17,70 @@ interface EventCardProps {
 export default function EventCard({ event, onPress }: EventCardProps) {
   const [imageUrl, setImageUrl] = useState<string>(CONFIG.DEFAULT_IMAGE);
   const [imageLoading, setImageLoading] = useState(true);
+
   useEffect(() => {
-    const loadImage = async () => {
+    let mounted = true;
+    const load = async () => {
       try {
         setImageLoading(true);
-        const url = await fetchImages(event.keywords || event.event_name);
-        setImageUrl(url);
-      } catch (error) {
-        console.error("Error loading image:", error);
-        setImageUrl(CONFIG.DEFAULT_IMAGE);
+        const url = await fetchImages(event.allKeywords, event.id);
+        if (mounted) setImageUrl(url);
+      } catch {
+        if (mounted) setImageUrl(CONFIG.DEFAULT_IMAGE);
       } finally {
-        setImageLoading(false);
+        if (mounted) setImageLoading(false);
       }
     };
+    load();
+    return () => {
+      mounted = false;
+    };
+  }, [event.id, event.allKeywords]);
 
-    loadImage();
-  }, [event.keywords, event.event_name]);
   return (
-    // <TouchableOpacity className="w-48 mr-4 bg-gray-900 rounded-2xl overflow-hidden shadow-md">
-    //   <Image source={{ uri: "https://i.pinimg.com/736x/8e/1c/18/8e1c18e08df9e22ede87d3fb438c8b18.jpg" }} className=" w-full rounded-lg"/>
-    //   <View className="p-3">
-    //     <Text className="text-white font-semibold text-base" numberOfLines={1}>hello</Text>
-    //   </View>
-    // </TouchableOpacity>
-    <TouchableOpacity 
-      className="w-72 mr-4 bg-gray-900 rounded-2xl overflow-hidden shadow-md"
+    <TouchableOpacity
       onPress={onPress}
       activeOpacity={0.8}
+      className="w-72 mr-4 rounded-[28px] overflow-hidden border border-white/10 bg-white/5"
     >
-      <View className="relative w-full h-40">
-        {imageLoading ? (
-          <View className="w-full h-full items-center justify-center bg-gray-800">
-            <ActivityIndicator size="small" color="#00BFFF" />
+      {imageLoading ? (
+        <View className="w-full h-44 items-center justify-center bg-black/30">
+          <ActivityIndicator size="small" color="#7AD6FF" />
+        </View>
+      ) : (
+        <ImageBackground
+          source={{ uri: imageUrl }}
+          className="w-full h-44"
+          resizeMode="cover"
+        >
+          <View className="absolute inset-0 bg-black/20" />
+          <View className="absolute top-3 left-3">
+            <View className="bg-black/50 rounded-full px-3 py-1 border border-white/20">
+              <Text className="text-white/90 text-xs uppercase tracking-[2px]">
+                {event.category.replace(/_/g, " ")}
+              </Text>
+            </View>
           </View>
-        ) : (
-          <Image 
-            source={{ uri: imageUrl }} 
-            className="w-full h-full"
-            resizeMode="cover"
-          />
-        )}
-        <View className="absolute inset-0" style={{ backgroundColor: "rgba(0,0,0,0.25)" }} />
-        <View className="absolute bottom-0 left-0 right-0 h-20" style={{ backgroundColor: "rgba(0,0,0,0.45)" }} />
-      </View>
-      
+        </ImageBackground>
+      )}
+
       <View className="p-4">
-        <Text className="text-white font-semibold text-base mb-1" numberOfLines={2}>
+        <Text className="text-white/50 text-xs mb-1">{event.date_display}</Text>
+        <Text
+          className="text-white font-semibold text-base leading-5"
+          numberOfLines={2}
+        >
           {event.event_name}
         </Text>
-        <Text className="text-gray-400 text-xs mb-2">
-          {event.date_display}
-        </Text>
-        <Text className="text-gray-300 text-sm" numberOfLines={3}>
+        <Text className="text-white/60 text-sm mt-2 leading-5" numberOfLines={2}>
           {event.description}
         </Text>
-        
-        {/* Tags */}
-        <View className="flex-row flex-wrap mt-3 gap-2">
-          <View className="bg-blue-500/20 px-2 py-1 rounded-full">
-            <Text className="text-blue-400 text-xs">{event.category}</Text>
+        {event.brightness ? (
+          <View className="mt-3 flex-row items-center gap-1">
+            <View className="w-1.5 h-1.5 rounded-full bg-[#7AD6FF]" />
+            <Text className="text-white/40 text-xs">{event.brightness}</Text>
           </View>
-          {event.constellation && (
-            <View className="bg-purple-500/20 px-2 py-1 rounded-full">
-              <Text className="text-purple-400 text-xs">{event.constellation}</Text>
-            </View>
-          )}
-        </View>
+        ) : null}
       </View>
     </TouchableOpacity>
   );

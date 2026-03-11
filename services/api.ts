@@ -25,15 +25,31 @@ export const fetchEventById = async (id: number): Promise<Events | null> => {
 
 export const fetchDescription = async (id: number): Promise<string> => {
   const events = await fetchAllEvents();
-  const eventDescription = events.find((item) => item.id === id);
-  return eventDescription?.description ?? "";
+  return events.find((item) => item.id === id)?.description ?? "";
 };
 
-export const fetchImages = async (query: string): Promise<string> => {
+export const fetchImages = async (
+  keywords: string[],
+  eventId: number = 0,
+): Promise<string> => {
   const year = new Date().getFullYear();
-  const response = await axios.get(
-    `${CONFIG.NASA_URL}/search?q=${query}&media_type=image&year_start=2005&year_end=${year}`,
-  );
-  const items = response.data.collection.items;
-  return items.length > 0 ? items[0].links[0].href : CONFIG.DEFAULT_IMAGE;
+
+  for (const query of keywords) {
+    try {
+      const response = await axios.get(
+        `${CONFIG.NASA_URL}/search?q=${encodeURIComponent(query)}&media_type=image&year_start=2005&year_end=${year}`,
+      );
+      const items: any[] = response.data.collection.items ?? [];
+      const top3 = items.slice(0, 3);
+      if (top3.length > 0) {
+        const pick = top3[eventId % top3.length];
+        const href = pick?.links?.[0]?.href;
+        if (href) return href;
+      }
+    } catch {
+      // network blip on this keyword — try the next one
+    }
+  }
+
+  return CONFIG.DEFAULT_IMAGE;
 };

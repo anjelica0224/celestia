@@ -1,7 +1,13 @@
 import { CONFIG } from "@/constants/keys";
 import { fetchImages } from "@/services/api";
 import { useEffect, useState } from "react";
-import { ActivityIndicator, ImageBackground, Text, TouchableOpacity, View } from "react-native";
+import {
+  ActivityIndicator,
+  ImageBackground,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 
 interface Props {
   event: Events;
@@ -17,9 +23,9 @@ export default function EventPreviewCard({ event, onPress }: Props) {
     const load = async () => {
       try {
         setLoading(true);
-        const url = await fetchImages(event.keywords || event.event_name);
+        const url = await fetchImages(event.allKeywords, event.id);
         if (mounted) setImageUrl(url);
-      } catch (error) {
+      } catch {
         if (mounted) setImageUrl(CONFIG.DEFAULT_IMAGE);
       } finally {
         if (mounted) setLoading(false);
@@ -29,7 +35,7 @@ export default function EventPreviewCard({ event, onPress }: Props) {
     return () => {
       mounted = false;
     };
-  }, [event.id, event.keywords, event.event_name]);
+  }, [event.id, event.allKeywords]);
 
   return (
     <TouchableOpacity
@@ -51,14 +57,19 @@ export default function EventPreviewCard({ event, onPress }: Props) {
           <View className="p-5 flex-row justify-between items-center">
             <View className="bg-black/45 rounded-full px-4 py-1 border border-white/20">
               <Text className="text-white/90 text-xs uppercase tracking-[3px]">
-                {event.category.replace("_", " ")}
+                {event.category.replace(/_/g, " ")}
               </Text>
             </View>
             <Text className="text-white/70 text-xs">{event.date_display}</Text>
           </View>
           <View className="p-6 bg-black/45 rounded-[32px] m-4 border border-white/10">
-            <Text className="text-white/70 text-sm">{event.visibility || "Visibility varies"}</Text>
-            <Text className="text-white text-2xl font-semibold mt-2" numberOfLines={2}>
+            <Text className="text-white/70 text-sm">
+              {event.visibility || "Visibility varies"}
+            </Text>
+            <Text
+              className="text-white text-2xl font-semibold mt-2"
+              numberOfLines={2}
+            >
               {event.event_name}
             </Text>
           </View>
@@ -67,4 +78,3 @@ export default function EventPreviewCard({ event, onPress }: Props) {
     </TouchableOpacity>
   );
 }
-

@@ -11,6 +11,7 @@ interface Events {
   brightness: string;
   requires_equipment: string;
   keywords: string;
+  allKeywords: string[];
   raw_description: string;
   detail_url?: string;
 }

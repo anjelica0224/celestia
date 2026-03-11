@@ -39,17 +39,17 @@ export default function EventDetailScreen() {
         setLoading(true);
         const found = await fetchEventById(numericId);
         if (!found) {
-          setError("We couldn’t find this event anymore.");
+          setError("We couldn't find this event anymore.");
         } else {
           setEvent(found);
           try {
-            const hero = await fetchImages(found.keywords || found.event_name);
+            const hero = await fetchImages(found.allKeywords, found.id);
             setImageUrl(hero);
           } catch {
             setImageUrl(CONFIG.DEFAULT_IMAGE);
           }
         }
-      } catch (err) {
+      } catch {
         setError("Unable to load this event right now.");
       } finally {
         setLoading(false);
@@ -86,85 +86,116 @@ export default function EventDetailScreen() {
   return (
     <ImageBackground source={images.bg} className="flex-1" resizeMode="cover">
       <ScrollView contentContainerStyle={{ paddingBottom: insets.bottom + 48 }}>
-        <View className="relative h-[380px]">
+
+        {/* Hero image */}
+        <View className="h-[420px]">
           <ImageBackground
             source={{ uri: imageUrl }}
             className="flex-1"
             resizeMode="cover"
-            imageStyle={{ opacity: 0.9 }}
           >
-            <View className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/60 to-black" />
+            <View className="absolute inset-0 bg-black/30" />
+            <View className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black" />
+
+            {/* Nav */}
             <View
-              className="px-6 pt-14 flex-row justify-between items-center"
-              style={{ paddingTop: insets.top + 20 }}
+              className="px-6 flex-row justify-between items-center"
+              style={{ paddingTop: insets.top + 16 }}
             >
               <TouchableOpacity
-                className="w-11 h-11 rounded-full bg-black/50 border border-white/30 items-center justify-center"
+                className="w-11 h-11 rounded-full bg-black/50 border border-white/20 items-center justify-center"
                 onPress={() => router.back()}
               >
                 <Ionicons name="chevron-back" size={22} color="#fff" />
               </TouchableOpacity>
-              <Ionicons name="share-outline" size={22} color="#fff" />
+              <TouchableOpacity
+                className="w-11 h-11 rounded-full bg-black/50 border border-white/20 items-center justify-center"
+                onPress={() => event.detail_url && Linking.openURL(event.detail_url)}
+              >
+                <Ionicons name="share-outline" size={20} color="#fff" />
+              </TouchableOpacity>
             </View>
-            <View className="absolute bottom-10 px-6">
-              <Text className="text-white/70 text-sm">
-                {event.date_display}
-              </Text>
-              <Text className="text-white text-3xl font-semibold mt-2">
+
+            {/* Title overlay */}
+            <View className="absolute bottom-8 px-6">
+              <View className="bg-black/40 self-start rounded-full px-3 py-1 border border-white/20 mb-3">
+                <Text className="text-[#7AD6FF] text-xs uppercase tracking-[3px]">
+                  {event.category.replace(/_/g, " ")}
+                </Text>
+              </View>
+              <Text className="text-white/70 text-sm">{event.date_display}</Text>
+              <Text className="text-white text-3xl font-semibold mt-1 leading-9">
                 {event.event_name}
               </Text>
-              <Text className="text-white/60 mt-1">
-                {event.constellation || event.visibility || "Sky-wide"}
-              </Text>
+              {(event.constellation || event.visibility) ? (
+                <Text className="text-white/60 mt-1 text-sm">
+                  {event.constellation || event.visibility}
+                </Text>
+              ) : null}
             </View>
           </ImageBackground>
         </View>
 
+        {/* Body */}
         <View className="px-6 mt-8">
-          <Text className="text-white/60 text-xs uppercase tracking-[4px]">
-            This week&apos;s focus
-          </Text>
-          <Text className="text-white text-xl font-semibold mt-3">
-            {event.category.replace("_", " ")}
-          </Text>
-          <Text className="text-white/80 leading-7 mt-4">
+
+          {/* Description */}
+          <Text className="text-white/80 leading-7 text-base">
             {event.description}
           </Text>
 
-          <View className="mt-8 border-t border-white/15 pt-6">
-            <Text className="text-white/60 text-xs uppercase tracking-[4px]">
+          {/* Viewing tips */}
+          <View className="mt-8 border-t border-white/10 pt-6">
+            <Text className="text-white/50 text-xs uppercase tracking-[4px] mb-4">
               Viewing tips
             </Text>
-            <Text className="text-white mt-3">
-              {event.viewing_time || "Check local times"}
-            </Text>
-            <Text className="text-white/80 mt-2">
-              {event.visibility || "Varies"}
-            </Text>
-            <Text className="text-white/80 mt-2">
-              {event.requires_equipment || "No special gear"}
-            </Text>
+            <View className="gap-4">
+              <View className="flex-row items-start gap-3">
+                <Ionicons name="time-outline" size={18} color="#7AD6FF" />
+                <Text className="text-white/80 flex-1 leading-5">
+                  {event.viewing_time || "Check local times"}
+                </Text>
+              </View>
+              <View className="flex-row items-start gap-3">
+                <Ionicons name="eye-outline" size={18} color="#7AD6FF" />
+                <Text className="text-white/80 flex-1 leading-5">
+                  {event.visibility || "Varies by location"}
+                </Text>
+              </View>
+              <View className="flex-row items-start gap-3">
+                <Ionicons name="sunny-outline" size={18} color="#7AD6FF" />
+                <Text className="text-white/80 flex-1 leading-5">
+                  {event.brightness || "Brightness varies"}
+                </Text>
+              </View>
+              <View className="flex-row items-start gap-3">
+                <Ionicons name="telescope-outline" size={18} color="#7AD6FF" />
+                <Text className="text-white/80 flex-1 leading-5">
+                  {event.requires_equipment || "No special gear needed"}
+                </Text>
+              </View>
+            </View>
           </View>
 
-          <View className="mt-8 border-t border-white/15 pt-6">
-            <Text className="text-white/60 text-xs uppercase tracking-[4px]">
-              Read more
-            </Text>
-            <Text className="text-white/75 leading-7">
-              For more details on this event, check out{" "}
-              <Text
-                className="text-blue-400 underline"
-                onPress={() => {
-                  if (event.detail_url) {
-                    Linking.openURL(event.detail_url); // For external links
-                  }
-                }}
-              >
-                this page
+          {/* Read more */}
+          {event.detail_url ? (
+            <View className="mt-8 border-t border-white/10 pt-6">
+              <Text className="text-white/50 text-xs uppercase tracking-[4px] mb-4">
+                Read more
               </Text>
-              on In-The-Sky.org.
-            </Text>
-          </View>
+              <TouchableOpacity
+                onPress={() => Linking.openURL(event.detail_url!)}
+                className="flex-row items-center gap-2 bg-white/5 border border-white/10 rounded-2xl px-5 py-4"
+              >
+                <Ionicons name="globe-outline" size={18} color="#7AD6FF" />
+                <Text className="text-[#7AD6FF] flex-1">
+                  View on In-The-Sky.org
+                </Text>
+                <Ionicons name="chevron-forward" size={16} color="rgba(255,255,255,0.3)" />
+              </TouchableOpacity>
+            </View>
+          ) : null}
+
         </View>
       </ScrollView>
     </ImageBackground>
