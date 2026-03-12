@@ -1,7 +1,6 @@
 "use client";
 
 import EventPreviewCard from "@/components/EventPreviewCard";
-import Header from "@/components/Header";
 import { images } from "@/constants/images";
 import { fetchAllEvents } from "@/services/api";
 import { useFetch } from "@/services/usefetch";
@@ -105,8 +104,7 @@ export default function Index() {
           paddingBottom: insets.bottom + 100,
         }}
       >
-        <Header />
-        <View className="mt-10">
+        <View className="mt-0">
           <Text className="text-white/60 uppercase tracking-[6px] text-xs">
             Celestia
           </Text>

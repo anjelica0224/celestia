@@ -6,6 +6,7 @@ import { fetchEventById, fetchImages } from "@/services/api";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useEffect, useState } from "react";
+import ShareButton from "@/components/ShareButton";
 import {
   ActivityIndicator,
   ImageBackground,
@@ -14,6 +15,7 @@ import {
   Text,
   TouchableOpacity,
   View,
+  Share
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
@@ -62,7 +64,7 @@ export default function EventDetailScreen() {
     return (
       <View className="flex-1 bg-[#03071E] items-center justify-center">
         <ActivityIndicator size="large" color="#7AD6FF" />
-        <Text className="text-white/80 mt-3">Loading mission details…</Text>
+        <Text className="text-white/80 mt-3">Loading event details…</Text>
       </View>
     );
   }
@@ -108,12 +110,7 @@ export default function EventDetailScreen() {
               >
                 <Ionicons name="chevron-back" size={22} color="#fff" />
               </TouchableOpacity>
-              <TouchableOpacity
-                className="w-11 h-11 rounded-full bg-black/50 border border-white/20 items-center justify-center"
-                onPress={() => event.detail_url && Linking.openURL(event.detail_url)}
-              >
-                <Ionicons name="share-outline" size={20} color="#fff" />
-              </TouchableOpacity>
+              <ShareButton event={event} />
             </View>
 
             {/* Title overlay */}
