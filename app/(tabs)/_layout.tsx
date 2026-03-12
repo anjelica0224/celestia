@@ -8,7 +8,6 @@ export default function _Layout() {
       <Tabs.Screen name="index" options={{ headerShown: false, tabBarIcon: ({color, focused}) => <Octicons name={focused ? 'home-fill' : 'home'} size={24} color={color}/>, tabBarShowLabel: false }} />
       <Tabs.Screen name="explore" options={{ headerShown: false, tabBarIcon: ({color, focused}) => <Ionicons name={focused ? 'planet' : 'planet-outline'} color={color} size={24}/>, tabBarShowLabel: false }} />
       <Tabs.Screen name="calendar" options={{ headerShown: false, tabBarIcon: ({color, focused}) => <Ionicons name={focused ? 'calendar' : 'calendar-outline'} color={color} size={24}/>, tabBarShowLabel: false }} />
-      <Tabs.Screen name="profile" options={{ headerShown: false, tabBarIcon: ({color, focused}) => <Octicons name={focused ? 'person-fill' : 'person'} size={24} color={color}/>, tabBarShowLabel: false }} />
     </Tabs>
   );
 }

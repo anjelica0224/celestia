@@ -41,7 +41,10 @@ export default function CalendarScreen() {
   const { data: events, loading } = useFetch(fetchAllEvents);
 
   const today = todayStr();
-  const [viewDate, setViewDate] = useState(() => new Date());
+  const [viewDate, setViewDate] = useState(() => {
+    const d = new Date();
+    return new Date(d.getFullYear(), d.getMonth(), 1);
+  });
   const [selectedDate, setSelectedDate] = useState(today);
 
   const year = viewDate.getFullYear();
@@ -75,11 +78,7 @@ export default function CalendarScreen() {
   const selectedEvents = eventsByDate[selectedDate] ?? [];
 
   const changeMonth = (delta: number) => {
-    setViewDate((prev) => {
-      const next = new Date(prev);
-      next.setMonth(next.getMonth() + delta);
-      return next;
-    });
+    setViewDate((prev) => new Date(prev.getFullYear(), prev.getMonth() + delta, 1));
   };
 
   if (loading) {
@@ -116,7 +115,7 @@ export default function CalendarScreen() {
           >
             <Ionicons name="chevron-back" size={20} color="#fff" />
           </TouchableOpacity>
-          <Text className="text-white text-lg font-semibold tracking-wide">
+          <Text className="text-white text-base font-semibold tracking-wide text-center flex-1" numberOfLines={1} adjustsFontSizeToFit>
             {MONTHS[month]} {year}
           </Text>
           <TouchableOpacity
