@@ -54,16 +54,18 @@ jobs:
         id: android
         if: inputs.platform == 'all' || inputs.platform == 'android' || github.event_name == 'push'
         run: |
-          OUTPUT=$(eas build --platform android --profile ${{ inputs.profile || 'preview' }} --non-interactive --json 2>/dev/null)
-          URL=$(echo "$OUTPUT" | jq -r '.[0].buildDetailsPageUrl // .[0].url // ""')
+          OUTPUT=$(eas build --platform android --profile ${{ inputs.profile || 'preview' }} --non-interactive --json)
+          echo "Raw output: $OUTPUT"
+          URL=$(echo "$OUTPUT" | jq -r 'if type == "array" then .[0].buildDetailsPageUrl else .buildDetailsPageUrl end // ""')
           echo "url=$URL" >> $GITHUB_OUTPUT
 
       - name: Build iOS
         id: ios
         if: inputs.platform == 'all' || inputs.platform == 'ios' || github.event_name == 'push'
         run: |
-          OUTPUT=$(eas build --platform ios --profile ${{ inputs.profile || 'preview' }} --non-interactive --json 2>/dev/null)
-          URL=$(echo "$OUTPUT" | jq -r '.[0].buildDetailsPageUrl // .[0].url // ""')
+          OUTPUT=$(eas build --platform ios --profile ${{ inputs.profile || 'preview' }} --non-interactive --json)
+          echo "Raw output: $OUTPUT"
+          URL=$(echo "$OUTPUT" | jq -r 'if type == "array" then .[0].buildDetailsPageUrl else .buildDetailsPageUrl end // ""')
           echo "url=$URL" >> $GITHUB_OUTPUT
 
   release:
@@ -89,10 +91,10 @@ jobs:
           NOTES="## Celestia ${{ steps.sha.outputs.short }}"$'\n\n'
           NOTES+="Built from commit [\`${{ steps.sha.outputs.short }}\`](https://github.com/${{ github.repository }}/commit/${{ github.sha }}) on \`main\`."$'\n\n'
           if [ -n "$ANDROID_URL" ]; then
-            NOTES+="### Android"$'\n'"📦 [Download APK]($ANDROID_URL)"$'\n\n'
+            NOTES+="### Android"$'\n'"[Download APK]($ANDROID_URL)"$'\n\n'
           fi
           if [ -n "$IOS_URL" ]; then
-            NOTES+="### iOS"$'\n'"🍎 [Download IPA / Simulator build]($IOS_URL)"$'\n\n'
+            NOTES+="### iOS"$'\n'"[Download IPA / Simulator build]($IOS_URL)"$'\n\n'
           fi
           NOTES+="_Links open the EAS build page where you can download the file directly._"
           echo "notes<<EOF" >> $GITHUB_OUTPUT
