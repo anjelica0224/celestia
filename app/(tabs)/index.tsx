@@ -6,9 +6,9 @@ import { images } from "@/constants/images";
 import { fetchAllEvents } from "@/services/api";
 import { useFetch } from "@/services/usefetch";
 import { useRouter } from "expo-router";
-import { useMemo, useRef, useState } from "react";
+import * as SplashScreen from "expo-splash-screen";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
-  ActivityIndicator,
   Dimensions,
   ImageBackground,
   ScrollView,
@@ -52,6 +52,12 @@ export default function Index() {
   const [activeIndex, setActiveIndex] = useState(0);
   const insets = useSafeAreaInsets();
 
+  useEffect(() => {
+    if (!loading) {
+      SplashScreen.hideAsync();
+    }
+  }, [loading]);
+
   const sections = useMemo(() => {
     const collection = events ?? [];
     return Array.from({ length: DAYS_TO_SHOW }, (_, index) => {
@@ -69,17 +75,6 @@ export default function Index() {
       };
     });
   }, [events, today]);
-
-  if (loading) {
-    return (
-      <View className="flex-1 bg-[#050B1A] items-center justify-center">
-        <ActivityIndicator size="large" color="#7AD6FF" />
-        <Text className="text-white/80 mt-4">
-          Calibrating tonight&apos;s map...
-        </Text>
-      </View>
-    );
-  }
 
   if (error) {
     return (
@@ -157,7 +152,7 @@ export default function Index() {
           </Text>
           <Text className="text-white/60 mt-2" numberOfLines={3}>
             {activeEvents[0]?.description ??
-              "We’ll notify you the moment this night receives a fresh celestial event."}
+              "We'll notify you the moment this night receives a fresh celestial event."}
           </Text>
         </View>
 
