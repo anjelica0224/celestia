@@ -1,4 +1,4 @@
-name: EAS Build (Android & iOS)
+name: EAS Build + Release
 
 on:
   push:
@@ -27,6 +27,9 @@ jobs:
   build:
     name: EAS Build
     runs-on: ubuntu-latest
+    outputs:
+      android_url: ${{ steps.android.outputs.url }}
+      ios_url: ${{ steps.ios.outputs.url }}
 
     steps:
       - name: Checkout repository
@@ -48,9 +51,59 @@ jobs:
           token: ${{ secrets.EXPO_TOKEN }}
 
       - name: Build Android
+        id: android
         if: inputs.platform == 'all' || inputs.platform == 'android' || github.event_name == 'push'
-        run: eas build --platform android --profile ${{ inputs.profile || 'preview' }} --non-interactive
+        run: |
+          OUTPUT=$(eas build --platform android --profile ${{ inputs.profile || 'preview' }} --non-interactive --json 2>/dev/null)
+          URL=$(echo "$OUTPUT" | jq -r '.[0].buildDetailsPageUrl // .[0].url // ""')
+          echo "url=$URL" >> $GITHUB_OUTPUT
 
       - name: Build iOS
+        id: ios
         if: inputs.platform == 'all' || inputs.platform == 'ios' || github.event_name == 'push'
-        run: eas build --platform ios --profile ${{ inputs.profile || 'preview' }} --non-interactive
+        run: |
+          OUTPUT=$(eas build --platform ios --profile ${{ inputs.profile || 'preview' }} --non-interactive --json 2>/dev/null)
+          URL=$(echo "$OUTPUT" | jq -r '.[0].buildDetailsPageUrl // .[0].url // ""')
+          echo "url=$URL" >> $GITHUB_OUTPUT
+
+  release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get short SHA
+        id: sha
+        run: echo "short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+
+      - name: Build release notes
+        id: notes
+        run: |
+          ANDROID_URL="${{ needs.build.outputs.android_url }}"
+          IOS_URL="${{ needs.build.outputs.ios_url }}"
+          NOTES="## Celestia ${{ steps.sha.outputs.short }}"$'\n\n'
+          NOTES+="Built from commit [\`${{ steps.sha.outputs.short }}\`](https://github.com/${{ github.repository }}/commit/${{ github.sha }}) on \`main\`."$'\n\n'
+          if [ -n "$ANDROID_URL" ]; then
+            NOTES+="### Android"$'\n'"📦 [Download APK]($ANDROID_URL)"$'\n\n'
+          fi
+          if [ -n "$IOS_URL" ]; then
+            NOTES+="### iOS"$'\n'"🍎 [Download IPA / Simulator build]($IOS_URL)"$'\n\n'
+          fi
+          NOTES+="_Links open the EAS build page where you can download the file directly._"
+          echo "notes<<EOF" >> $GITHUB_OUTPUT
+          echo "$NOTES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: build-${{ steps.sha.outputs.short }}
+          name: Celestia ${{ steps.sha.outputs.short }}
+          body: ${{ steps.notes.outputs.notes }}
+          draft: false
+          prerelease: false
