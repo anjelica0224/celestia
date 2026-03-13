@@ -48,5 +48,17 @@
           }
         }
       ]
-    ]}
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f55a8f93-3622-4897-a289-2f59bb017205"
+      }
+    },
+    "owner": "anjelica0224"
+  }
 }
