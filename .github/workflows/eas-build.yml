@@ -53,6 +53,9 @@ jobs:
           distribution: zulu
           java-version: 17
       
+      - name: Expo prebuild
+        run: npx expo prebuild --platform android --clean
+      
       - name: Setup Gradle                                                                                                                                 
         uses: gradle/actions/setup-gradle@v4
                                                                                                                                                              
