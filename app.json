@@ -9,10 +9,10 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/logo.png",
-        "backgroundImage": "./assets/images/logo.png",
-        "monochromeImage": "./assets/images/logo.png"
+      "backgroundColor": "#E6F4FE",
+      "foregroundImage": "./assets/images/logo.png",
+      "backgroundImage": "./assets/images/logo.png",
+      "monochromeImage": "./assets/images/logo.png"
     },
     "ios": {
       "supportsTablet": true,
