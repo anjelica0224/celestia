@@ -8,6 +8,12 @@
     "scheme": "celestia",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/logo.png",
+        "backgroundImage": "./assets/images/logo.png",
+        "monochromeImage": "./assets/images/logo.png"
+    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.celestia.app"
@@ -27,21 +33,20 @@
       [
         "expo-splash-screen",
         {
+          "backgroundColor": "#000000",
           "image": "./assets/images/splash.png",
-          "resizeMode": "cover"
+          "resizeMode": "cover",
+          "android": {
+            "image": "./assets/images/splash.png",
+            "resizeMode": "cover",
+            "backgroundColor": "#000000"
+          },
+          "ios": {
+            "enableFullScreenImage_legacy": true,
+            "resizeMode": "cover",
+            "backgroundColor": "#000000"
+          }
         }
       ]
-    ],
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
-    },
-    "extra": {
-      "router": {},
-      "eas": {
-        "projectId": "f55a8f93-3622-4897-a289-2f59bb017205"
-      }
-    },
-    "owner": "anjelica0224"
-  }
+    ]}
 }
