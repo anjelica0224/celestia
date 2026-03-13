@@ -1,10 +1,6 @@
 import { Tabs } from "expo-router";
 import Octicons from '@expo/vector-icons/Octicons';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import * as SplashScreen from "expo-splash-screen";
-
-SplashScreen.preventAutoHideAsync();
-
 export default function _Layout() {
   return (
     <Tabs screenOptions={{ tabBarActiveTintColor: '#6592AB', tabBarItemStyle: { width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }, tabBarStyle: { backgroundColor: '#080A0B', paddingVertical: 20, paddingHorizontal: 20, borderColor: '#080A0B' } }}>

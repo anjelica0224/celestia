@@ -5,7 +5,7 @@ import { images } from "@/constants/images";
 import { fetchAllEvents } from "@/services/api";
 import { useFetch } from "@/services/usefetch";
 import { useRouter } from "expo-router";
-import * as SplashScreen from "expo-splash-screen";
+import { AppContext } from "../_layout";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   Dimensions,
@@ -53,7 +53,7 @@ export default function Index() {
 
   useEffect(() => {
     if (!loading) {
-      SplashScreen.hideAsync();
+      AppContext.hideSplash();
     }
   }, [loading]);
 
