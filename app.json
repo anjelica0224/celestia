@@ -9,7 +9,6 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "adaptiveIcon": {
-      "backgroundColor": "#E6F4FE",
       "foregroundImage": "./assets/images/logo.png",
       "backgroundImage": "./assets/images/logo.png",
       "monochromeImage": "./assets/images/logo.png"
@@ -35,17 +34,7 @@
         {
           "backgroundColor": "#000000",
           "image": "./assets/images/splash.png",
-          "resizeMode": "cover",
-          "android": {
-            "image": "./assets/images/splash.png",
-            "resizeMode": "cover",
-            "backgroundColor": "#000000"
-          },
-          "ios": {
-            "enableFullScreenImage_legacy": true,
-            "resizeMode": "cover",
-            "backgroundColor": "#000000"
-          }
+          "resizeMode": "cover"
         }
       ]
     ],
