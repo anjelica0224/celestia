@@ -61,8 +61,11 @@ jobs:
                                                                                                                                                              
       - name: Build APK                                                                                                                       
         run: |
-          cd android
-          ./gradlew assembleRelease 
+          eas build --local \
+          --non-interactive \
+          --output=./app-build \
+          --platform=${{ github.event.inputs.platform }} \
+          --profile=${{ github.event.inputs.profile }}
                                                                                                                                                              
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4                                                                                                                   
