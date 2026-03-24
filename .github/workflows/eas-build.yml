@@ -85,7 +85,7 @@ jobs:
         with:
           name: celestia-android
           path: ./celestia.apk
-
+                                                                                                                                                          
   release:
     name: Create GitHub Release
     runs-on: ubuntu-latest
@@ -117,12 +117,9 @@ jobs:
           name: Celestia ${{ steps.sha.outputs.short }}
           body: |
             ## Celestia ${{ steps.sha.outputs.short }}
-
             Built from [`${{ steps.sha.outputs.short }}`](https://github.com/${{ github.repository }}/commit/${{ github.sha }}) on `main`.
-
             ### Android
             Download the `.apk` below and install directly.
-
             ### iOS
             iOS build is queued on EAS. Check the [Expo dashboard](https://expo.dev) for the `.ipa` / simulator build once it completes.
           draft: false
