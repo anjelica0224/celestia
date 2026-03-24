@@ -1,8 +1,8 @@
 name: Build & Release
 
 on:
-  push:
-    branches: [main]
+  # push:
+  #   branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -45,37 +45,40 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm ci
+          npm install -g eas-cli@latest
+
+      - name: Verify EAS CLI
+        run: eas --version
 
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           distribution: zulu
           java-version: 17
-      
-      - name: Cache Gradle wrapper & dependencies
-        uses: actions/cache@v3
+
+      - name: Cache Gradle
+        uses: actions/cache@v4
         with:
           path: |
-            ~/.gradle/wrapper
             ~/.gradle/caches
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/gradle-wrapper.properties') }}
+            ~/.gradle/wrapper
+          key: gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: |
-            ${{ runner.os }}-gradle-
+            gradle-
 
-      - name: Expo prebuild
-        run: npx expo prebuild --platform android --clean
-
-      - name: Make Gradle wrapper executable
-        run: chmod +x ./android/gradlew
-      
-      - name: Setup Gradle                                                                                                                                 
-        uses: gradle/actions/setup-gradle@v4
-                                                                                                                                                             
-      - name: Build APK                                                                                                                       
+      - name: Build APK
         run: |
-          cd android
-          ./gradlew assembleRelease 
+          export NODE_OPTIONS="--openssl-legacy-provider --max_old_space_size=4096"
+          eas build --local \
+            --non-interactive \
+            --output=./celestia.apk \
+            --platform=android \
+            --profile=preview
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+          NODE_ENV: production
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
