@@ -6,7 +6,8 @@
   "build": {
     "preview": {
       "android": {
-        "buildType": "apk"
+        "buildType": "apk",
+        "prebuildCommand": "npx expo prebuild --platform android --clean && sed -i 's/.*splashscreen_logo.*//g' android/app/src/main/res/values/values.xml"
       },
       "ios": {
         "simulator": true
