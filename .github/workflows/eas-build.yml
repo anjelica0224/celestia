@@ -53,21 +53,8 @@ jobs:
           distribution: zulu
           java-version: 17
       
-      - name: Cache Gradle wrapper & dependencies
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.gradle/wrapper
-            ~/.gradle/caches
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/gradle-wrapper.properties') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-
-
       - name: Expo prebuild
         run: npx expo prebuild --platform android --clean
-
-      - name: Make Gradle wrapper executable
-        run: chmod +x ./android/gradlew
       
       - name: Setup Gradle                                                                                                                                 
         uses: gradle/actions/setup-gradle@v4
@@ -76,12 +63,12 @@ jobs:
         run: |
           cd android
           ./gradlew assembleRelease 
-
+                                                                                                                                                             
       - name: Upload APK artifact
-        uses: actions/upload-artifact@v4
-        with:
+        uses: actions/upload-artifact@v4                                                                                                                   
+        with:   
           name: celestia-android
-          path: ./celestia.apk
+          path: android/app/build/outputs/apk/release/*.apk
 
   release:
     name: Create GitHub Release
@@ -114,12 +101,9 @@ jobs:
           name: Celestia ${{ steps.sha.outputs.short }}
           body: |
             ## Celestia ${{ steps.sha.outputs.short }}
-
             Built from [`${{ steps.sha.outputs.short }}`](https://github.com/${{ github.repository }}/commit/${{ github.sha }}) on `main`.
-
             ### Android
             Download the `.apk` below and install directly.
-
             ### iOS
             iOS build is queued on EAS. Check the [Expo dashboard](https://expo.dev) for the `.ipa` / simulator build once it completes.
           draft: false
