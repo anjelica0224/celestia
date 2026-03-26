@@ -9,7 +9,8 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
-      "backgroundColor": "#000000"
+      "backgroundColor": "#000000",
+      "image": "./assets/images/logo.png"
     },
     "ios": {
       "supportsTablet": true,
