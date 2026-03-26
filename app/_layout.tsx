@@ -1,5 +1,5 @@
 import { Stack } from "expo-router";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Dimensions, Image, StyleSheet, View } from "react-native";
 import * as SplashScreen from "expo-splash-screen";
 import "../global.css";
@@ -13,6 +13,7 @@ export const AppContext = {
 };
 
 export default function RootLayout() {
+  const [appReady, setAppReady] = useState(false);
   const [showSplash, setShowSplash] = useState(true);
 
   AppContext.hideSplash = () => {
@@ -20,11 +21,19 @@ export default function RootLayout() {
   };
 
   useEffect(() => {
-    SplashScreen.hideAsync();
+    setAppReady(true);
   }, []);
 
+  const onLayoutRootView = useCallback(async () => {
+    if (appReady) {
+      await SplashScreen.hideAsync();
+    }
+  }, [appReady]);
+
+  if (!appReady) return null;
+
   return (
-    <View style={styles.container}>
+    <View style={styles.container} onLayout={onLayoutRootView}>
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="event" />
@@ -44,15 +53,13 @@ export default function RootLayout() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
+  container: { flex: 1 },
   splash: {
     position: "absolute",
     top: 0,
     left: 0,
-    width: width,
-    height: height,
+    width,
+    height,
     zIndex: 999,
     backgroundColor: "#000000",
   },
