@@ -1,6 +1,8 @@
-# celestia 
+# celestia
 
-a mobile stargazing app that shows you what's happening in the night sky this week. built with react native.
+a mobile stargazing app that shows you what's happening in the night sky. browse live celestial events, explore NASA imagery, and never miss a moment worth looking up for.
+
+built with react native + expo.
 
 ## demo
 
@@ -20,31 +22,38 @@ a mobile stargazing app that shows you what's happening in the night sky this we
     <td>
       <img src="assets/images/ss3.jpeg" alt="Explore Gallery" width="300" />
     </td>
+    <td>
+      <img src="assets/images/ss4.jpeg" alt="Explore Gallery" width="300" />
+    </td>
   </tr>
 </table>
 
-
-browse celestial events by date, explore event details with NASA imagery, and swipe through a gallery of space photos.
+browse celestial events by date, dive into event details with real NASA imagery, swipe through a space photo gallery, and share events with friends.
 
 ## what's inside
 
-- **react native + expo** - built for iOS & Android
-- **nativewind** - tailwind but for mobile
-- **NASA Image and Video Library API** - pulls real space imagery from NASA's image library
-- **custom event data** - astronomy events for 2025
+- **react native + expo** — built for iOS & Android
+- **nativewind** — tailwind but for mobile
+- **live event data** — astronomy events pulled live from [in-the-sky.org](https://in-the-sky.org), parsed from iCal and categorized automatically
+- **sky calendar** — browse upcoming celestial events by date with a full monthly calendar view
+- **NASA image gallery** — explore tab pulls real imagery from NASA's open Image & Video Library API, matched to each event by keyword
+- **share events** — share any celestial event with viewing tips and details directly from the app
 
 ## run it
-
 ```bash
 npm install
 npx expo start
 ```
 
+## credits
+
+- **[in-the-sky.org](https://in-the-sky.org)** — live astronomical event data via public iCal feed
+- **[NASA Image and Video Library](https://images.nasa.gov)** — space imagery via the public NASA API
+
+
 ## later
 
-thinking about adding **appwrite** for faster data loading and maybe some user features like saving favorite events.
-
-
+thinking about adding **appwrite** for caching event data and user features like saving favourite events and setting reminders.
 
 ---
 
