@@ -1,7 +1,10 @@
 import { Stack } from "expo-router";
 import { useEffect, useState } from "react";
 import { Dimensions, Image, StyleSheet, View } from "react-native";
+import * as SplashScreen from "expo-splash-screen";
 import "../global.css";
+
+SplashScreen.preventAutoHideAsync();
 
 const { width, height } = Dimensions.get("screen");
 
@@ -15,6 +18,10 @@ export default function RootLayout() {
   AppContext.hideSplash = () => {
     setShowSplash(false);
   };
+
+  useEffect(() => {
+    SplashScreen.hideAsync();
+  }, []);
 
   return (
     <View style={styles.container}>
