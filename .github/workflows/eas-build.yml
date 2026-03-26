@@ -115,7 +115,7 @@ jobs:
           path: artifacts/android
 
       - name: Rename APK
-        run: mv artifacts/android/app-debug.apk artifacts/celestia-${{ steps.sha.outputs.short }}.apk
+        run: mv artifacts/android/app-release.apk artifacts/celestia-${{ steps.sha.outputs.short }}.apk
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
