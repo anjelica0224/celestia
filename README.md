@@ -53,7 +53,7 @@ npx expo start
 
 ## later
 
-thinking about adding **appwrite** for caching event data and user features like saving favourite events and setting reminders.
+thinking about adding **appwrite** for caching event data and probably adding user features like saving favourite events and setting reminders.
 
 ---
 
