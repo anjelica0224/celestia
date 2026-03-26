@@ -1,10 +1,7 @@
 import { Stack } from "expo-router";
-import { useCallback, useEffect, useState } from "react";
+import { useState } from "react";
 import { Dimensions, Image, StyleSheet, View } from "react-native";
-import * as SplashScreen from "expo-splash-screen";
 import "../global.css";
-
-SplashScreen.preventAutoHideAsync();
 
 const { width, height } = Dimensions.get("screen");
 
@@ -13,27 +10,14 @@ export const AppContext = {
 };
 
 export default function RootLayout() {
-  const [appReady, setAppReady] = useState(false);
   const [showSplash, setShowSplash] = useState(true);
 
   AppContext.hideSplash = () => {
     setShowSplash(false);
   };
 
-  useEffect(() => {
-    setAppReady(true);
-  }, []);
-
-  const onLayoutRootView = useCallback(async () => {
-    if (appReady) {
-      await SplashScreen.hideAsync();
-    }
-  }, [appReady]);
-
-  if (!appReady) return null;
-
   return (
-    <View style={styles.container} onLayout={onLayoutRootView}>
+    <View style={styles.container}>
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="event" />

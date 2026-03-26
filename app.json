@@ -35,11 +35,6 @@
       "reactCompiler": true,
       "buildCacheProvider": "eas"
     },
-    "expo": {
-      "splash": {
-        "backgroundColor": "#000000"
-      }
-    },
     "extra": {
       "router": {},
       "eas": {
